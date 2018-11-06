@@ -19,3 +19,7 @@ vector<string> Film::getMemebers(){
 float Film::getRating(){
   return rating;
 }
+
+void Film::test(){
+  cout << "working" << endl;
+}

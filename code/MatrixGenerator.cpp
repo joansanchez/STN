@@ -23,14 +23,33 @@ void readTitles(){
   cout << "Reading films IDs completed" << endl;
 }
 
+void readRatings(){
+  cout << "Reading films ratings" << endl;
+  ifstream file("../dataSet/small/title.ratings.tsv"); // pass file name as argment
+	string linebuffer;
+
+	while (file && getline(file, linebuffer)){
+	  if (linebuffer.length() != 0){
+      istringstream iss(linebuffer);
+      string titleID;
+      float titleRating;
+      getline(iss, titleID, '\t'); //partial stores the id of the films to store
+      iss >> titleRating;
+      films[titleID]->updateRating(titleRating);
+    }
+	}
+  cout << "Reading films ratings completed" << endl;
+}
+
 void mapPrinter(){
   map<string, Film*>::iterator it ;
   for(it = films.begin(); it != films.end(); ++it){
-    cout << it->first << endl;
+    cout << it->first << " " << it->second->getRating()<< endl;
   }
 }
 
 int main(){
   readTitles();
+  readRatings();
   mapPrinter();
 }
