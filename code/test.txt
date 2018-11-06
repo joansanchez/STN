@@ -1,0 +1,13 @@
+tt1830817	movie	Station	Station	0	\N	\N	\N	Mystery
+tt1825906	movie	Obscene Gangbang Sluts	Obscene Gangbang Sluts	1	2010	\N	122	\N
+tt6765436	movie	Kodambakkam	Kodambakkam	0	2006	\N	131	\N
+tt3797076	movie	The New Rijksmuseum - The Film	Het Nieuwe Rijksmuseum - De Film	0	2014	\N	120	Documentary,Drama
+tt1395039	movie	Etats généraux	Etats généraux	0	2006	\N	52	Documentary
+tt7659522	movie	Straight Outta Oakland 2	Straight Outta Oakland 2	0	2017	\N	75	Drama
+tt7082992	movie	Dionne	Dionne	0	\N	\N	\N	Biography,Drama,Music
+tt1927164	movie	The Zombies Are Coming to Town!	The Zombies Are Coming to Town!	0	2011	\N	64	Comedy,Horror
+tt8342104	movie	King of the Valley	King of the Valley	0	2018	\N	97	Drama
+tt0105733	movie	Die vergessene Stadt - Butte, Montana	Die vergessene Stadt - Butte, Montana	0	1992	\N	87	Documentary,History
+tt1076786	movie	Bungalow di Lereng Bukit	Bungalow di Lereng Bukit	0	1976	\N	\N	\N
+tt1267280	movie	Men's River	Nan ren he	0	1998	\N	100	\N
+tt0059356	movie	Kid Rodelo	Kid Rodelo	0	1966	\N	79	Western
