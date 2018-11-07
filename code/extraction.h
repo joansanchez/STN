@@ -1,3 +1,5 @@
+#ifndef extraction_h
+#define extraction_h
 #include <iostream>
 #include <vector>
 #include <fstream>
@@ -18,3 +20,4 @@ class Extraction{
     void mapPrinter(map<string, Film*> films);
 
 };
+#endif

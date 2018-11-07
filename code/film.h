@@ -1,3 +1,5 @@
+#ifndef film_h
+#define film_h
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -18,3 +20,4 @@ class Film{
     float getRating();
 
 };
+#endif
