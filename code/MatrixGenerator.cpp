@@ -55,11 +55,12 @@ void readNames(){
       for (int i = 0; i <= 4; ++i) iss >> tmp; //we don't need this values
       string filmsMember;
       iss >> filmsMember;
-      cout << filmsMember << endl;
       istringstream iss2(filmsMember); //el error esta por aqui
       string filmToInput;
       while(getline(iss2, filmToInput, ',')){
-        films[filmToInput]->addMember(nameMember);
+        if ( films.find(filmToInput) != films.end() ) {
+          films[filmToInput]->addMember(nameMember);
+        }
       }
     }
 	}
@@ -67,13 +68,18 @@ void readNames(){
 }
 
 void mapPrinter(){
+  cout << "Writing on file FilmInfo.txt" << endl;
   map<string, Film*>::iterator it ;
+  ofstream myfile;
+  myfile.open ("outputs/FilmInfo.txt");
   for(it = films.begin(); it != films.end(); ++it){
-    cout << it->first << " " << it->second->getRating()<< " ";
+    myfile << it->first << " " << it->second->getRating()<< " ";
     vector<string> members = it->second->getMemebers();
-    for(int i = 0; i < members.size(); ++i)cout << members[i] << " ";
-    cout << endl;
+    for(int i = 0; i < members.size(); ++i)myfile << members[i] << " ";
+    myfile << endl;
   }
+  myfile.close();
+  cout << "Writing on file FilmInfo.txt completed" << endl;
 }
 
 int main(){
