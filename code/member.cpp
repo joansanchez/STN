@@ -1,17 +1,22 @@
 #include "member.h"
 
+Member::Member(float ratingIn){
+  addRating(ratingIn);
+}
 void Member::addRating(float newRating){
   queueRatings.push(newRating);
 }
 void Member::calcRating(){
-  float tmp = 0;
+  float tmp = 0.0f;
   int numberElements = 0;
   while (!queueRatings.empty()){
-    tmp += queueRatings.front();
-    ++numberElements;
+    float queueFront = queueRatings.front();
+    tmp += queueFront;
+    if (queueFront != 0.0f) ++numberElements;
     queueRatings.pop();
   }
-  rating = tmp;
+  cout << numberElements << endl;
+  if (numberElements != 0)  rating = tmp/numberElements;
 }
 float Member::getRating(){
   return rating;

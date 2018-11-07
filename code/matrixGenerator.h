@@ -13,10 +13,12 @@ class MatrixGen{
   protected:
     map<string,Member*> membersInfo;
     map<string, set<string>> adjacencyMatrix;
+    void updateRatingsAfterRead();
   public:
     void generateMatrix(map<string, Film*> films);
     map<string,Member*> getMembersInfo();
     map<string, set<string>> getAdjacencyMatrix();
+    void showRatings();
 
 
 

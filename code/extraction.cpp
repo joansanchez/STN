@@ -40,7 +40,9 @@ map<string, Film*> Extraction::readRatings(map<string, Film*> films){
       float titleRating;
       getline(iss, titleID, '\t'); //partial stores the id of the films to store
       iss >> titleRating;
-      films[titleID]->updateRating(titleRating);
+      if ( films.find(titleID) != films.end() ){
+        films[titleID]->updateRating(titleRating);
+      }
     }
 	}
   cout << "Reading films ratings completed" << endl;

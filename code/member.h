@@ -9,6 +9,7 @@ class Member{
     float rating;
     queue <float> queueRatings;
   public:
+    Member(float ratingIn);
     void addRating(float newRating);
     void calcRating();
     float getRating();
