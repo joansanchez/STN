@@ -17,6 +17,4 @@ class Film{
 
     float getRating();
 
-    void test();
-
 };

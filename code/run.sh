@@ -1,7 +1,7 @@
 #!/bin/bash
 clear
 echo "Extracting data from files"
-g++ MatrixGenerator.cpp film.cpp
-./a.out
+g++ -o extraction.out film.cpp MatrixGenerator.cpp extraction.cpp
+./extraction.out
 
 rm *.out
