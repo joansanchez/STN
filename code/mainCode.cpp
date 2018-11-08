@@ -19,6 +19,8 @@ int main(){
   films=ext->extract(films);
   MatrixGen* matGen = new MatrixGen();
   matGen->generateMatrix(films);
+  membersInfo = matGen->getMembersInfo();
+  adjacencyMatrix = matGen->getAdjacencyMatrix();
 
 
 }

@@ -15,11 +15,25 @@ void MatrixGen::generateMatrix(map<string, Film*> films){
           membersInfo.insert(make_pair(membersTmp[i], new Member(ratingTmp)));
         }
         //adjacencyMatrix structure
-        
+        for(int j = 0; j < membersTmp.size(); ++j){
+          if (i != j){
+            if (adjacencyMatrix.find(membersTmp[i]) != adjacencyMatrix.end()){
+              adjacencyMatrix[membersTmp[i]].insert(membersTmp[j]);
+            }
+            else {
+              set<string> setTmp;
+              setTmp.insert(membersTmp[j]);
+              adjacencyMatrix.insert(make_pair(membersTmp[i], setTmp));
+            }
+          }
+        }
     }
   }
   updateRatingsAfterRead();
   //showRatings();
+  //showAdjacencyMatrix();
+  printToFile();
+  cout << "Generating adjacency matrix completed" << endl;
 }
 map<string,Member*> MatrixGen::getMembersInfo(){
   return membersInfo;
@@ -42,4 +56,35 @@ void MatrixGen::showRatings(){
   for(itera = membersInfo.begin(); itera != membersInfo.end(); ++itera){
     cout << itera->first << " " << itera->second->getRating()<<endl;
   }
+}
+
+void MatrixGen::showAdjacencyMatrix(){
+  map<string, set<string>>::iterator itera;
+  for(itera = adjacencyMatrix.begin(); itera != adjacencyMatrix.end(); ++itera){
+    cout << itera->first << "\t";
+    set<string> tmpSet = itera->second;
+    set<string>::iterator it;
+    for (it = tmpSet.begin(); it != tmpSet.end(); ++it){
+        cout << *it << " "; // Note the "*" here
+    }
+    cout << endl;
+  }
+}
+
+void MatrixGen::printToFile(){
+  cout << "Writing on file AdjacencyMatrix.txt" << endl;
+  ofstream myfile;
+  myfile.open ("outputs/AdjacencyMatrix.txt");
+  map<string, set<string>>::iterator itera;
+  for(itera = adjacencyMatrix.begin(); itera != adjacencyMatrix.end(); ++itera){
+    myfile << itera->first << "\t";
+    set<string> tmpSet = itera->second;
+    set<string>::iterator it;
+    for (it = tmpSet.begin(); it != tmpSet.end(); ++it){
+        myfile << *it << " ";
+    }
+    myfile << endl;
+  }
+  myfile.close();
+  cout << "Writing on file AdjacencyMatrix.txt completed" << endl;
 }

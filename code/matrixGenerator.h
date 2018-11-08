@@ -3,6 +3,8 @@
 #include <iostream>
 #include <map>
 #include <set>
+#include <fstream>
+#include <sstream>
 #include "member.h"
 #include "film.h"
 
@@ -19,6 +21,8 @@ class MatrixGen{
     map<string,Member*> getMembersInfo();
     map<string, set<string>> getAdjacencyMatrix();
     void showRatings();
+    void showAdjacencyMatrix();
+    void printToFile();
 
 
 
