@@ -1,6 +1,7 @@
 #include "matrixGenerator.h"
 
 void MatrixGen::generateMatrix(map<string, Film*> films){
+  cout << "Generating adjacency matrix" << endl;
   map<string, Film*>::iterator it;
   for(it = films.begin(); it != films.end(); ++it){
     float ratingTmp = it->second->getRating();
@@ -13,10 +14,12 @@ void MatrixGen::generateMatrix(map<string, Film*> films){
         else{
           membersInfo.insert(make_pair(membersTmp[i], new Member(ratingTmp)));
         }
+        //adjacencyMatrix structure
+        
     }
-    updateRatingsAfterRead();
-    showRatings();
   }
+  updateRatingsAfterRead();
+  //showRatings();
 }
 map<string,Member*> MatrixGen::getMembersInfo(){
   return membersInfo;

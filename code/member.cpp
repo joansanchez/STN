@@ -16,6 +16,7 @@ void Member::calcRating(){
     queueRatings.pop();
   }
   if (numberElements != 0)  rating = tmp/numberElements;
+  else rating = 0;
 }
 float Member::getRating(){
   return rating;
