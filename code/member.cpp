@@ -15,7 +15,6 @@ void Member::calcRating(){
     if (queueFront != 0.0f) ++numberElements;
     queueRatings.pop();
   }
-  cout << numberElements << endl;
   if (numberElements != 0)  rating = tmp/numberElements;
 }
 float Member::getRating(){

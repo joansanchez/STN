@@ -15,7 +15,7 @@ void MatrixGen::generateMatrix(map<string, Film*> films){
         }
     }
     updateRatingsAfterRead();
-    //showRatings();
+    showRatings();
   }
 }
 map<string,Member*> MatrixGen::getMembersInfo(){
@@ -28,7 +28,6 @@ map<string, set<string>> MatrixGen::getAdjacencyMatrix(){
 void MatrixGen::updateRatingsAfterRead(){
   map<string,Member*>::iterator itera;
   for(itera = membersInfo.begin(); itera != membersInfo.end(); ++itera){
-    cout << itera ->first << " ";
     itera->second->calcRating();
 
 
