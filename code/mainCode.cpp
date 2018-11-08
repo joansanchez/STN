@@ -2,16 +2,13 @@
 #include <map>
 #include <set>
 #include "film.h"
-#include "member.h"
 #include "extraction.h"
 #include "matrixGenerator.h"
+#include "influencerSearcher.h"
 using namespace std;
 
 
 map<string, Film*> films;
-map<string,Member*> membersInfo;
-map<string, set<string>> adjacencyMatrix;
-
 
 int main(){
   //extracting the data
@@ -19,8 +16,8 @@ int main(){
   films=ext->extract(films);
   MatrixGen* matGen = new MatrixGen();
   matGen->generateMatrix(films);
-  membersInfo = matGen->getMembersInfo();
-  adjacencyMatrix = matGen->getAdjacencyMatrix();
+  influencerSearcher* inSear = new influencerSearcher();
+  inSear->updateRatingsInfluence(matGen->getMembersInfo(),matGen->getAdjacencyMatrix());
 
 
 }
