@@ -15,6 +15,10 @@ void MatrixGen::generateMatrix(map<string, Film*> films){
           membersInfo.insert(make_pair(membersTmp[i], new Member(ratingTmp)));
         }
         //adjacencyMatrix structure
+        if (membersTmp.size() == 1){
+          set<string> setTmp;
+          adjacencyMatrix.insert(make_pair(membersTmp[i], setTmp));
+        }
         for(int j = 0; j < membersTmp.size(); ++j){
           if (i != j){
             if (adjacencyMatrix.find(membersTmp[i]) != adjacencyMatrix.end()){
@@ -33,6 +37,7 @@ void MatrixGen::generateMatrix(map<string, Film*> films){
   //showRatings();
   //showAdjacencyMatrix();
   printToFile();
+  calcCoordinates();
   cout << "Generating adjacency matrix completed" << endl;
 }
 map<string,Member*> MatrixGen::getMembersInfo(){
@@ -87,4 +92,33 @@ void MatrixGen::printToFile(){
   }
   myfile.close();
   cout << "Writing on file AdjacencyMatrix.txt completed" << endl;
+}
+
+void MatrixGen::calcCoordinates(){
+  organizeComponents();
+  map<string, int>::iterator itprint;
+  for (itprint = whichConnectedComponents.begin(); itprint != whichConnectedComponents.end(); ++itprint){
+    cout << itprint->first << " " << itprint->second << endl;
+  }
+}
+
+void MatrixGen::organizeComponents(){
+  int actualComponent = 0;
+  stack<string> S;
+  map<string, set<string>>::iterator iter;
+  for(iter = adjacencyMatrix.begin(); iter != adjacencyMatrix.end(); ++iter){
+    S.push(iter->first);
+    while (not S.empty()){
+      string top = S.top(); S.pop();
+      if (whichConnectedComponents.find(top) == whichConnectedComponents.end()){
+        whichConnectedComponents[top] = actualComponent;
+        set<string>::iterator itSet;
+        set<string> tmpSet = adjacencyMatrix[top];
+        for (itSet = tmpSet.begin(); itSet != tmpSet.end(); ++itSet){
+          S.push(*itSet);
+        }
+      }
+    }
+    ++actualComponent;
+  }
 }

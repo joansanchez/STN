@@ -13,7 +13,7 @@ void influencerSearcher::updateRatingsInfluence(map<string,Member*> membersInfo,
     newRatings.insert(make_pair(itera->first, newRating));
   }
   cout << "Computing influenecers completed"  << endl;
-  printNewRatings();
+  //printNewRatings();
 }
 
 map <string, float> influencerSearcher::getNewRatings(){
