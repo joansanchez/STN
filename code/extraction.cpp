@@ -60,7 +60,7 @@ map<string, Film*> Extraction::readNames(map<string, Film*> films){
       string nameMember;
       getline(iss, nameMember, '\t'); //partial stores the id of the films to store
       string tmp;
-      for (int i = 0; i <= 4; ++i) iss >> tmp; //we don't need this values
+      //for (int i = 0; i <= 4; ++i) iss >> tmp; //we don't need this values
       string filmsMember;
       iss >> filmsMember;
       istringstream iss2(filmsMember); //el error esta por aqui

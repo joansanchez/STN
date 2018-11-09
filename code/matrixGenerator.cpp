@@ -51,8 +51,6 @@ void MatrixGen::updateRatingsAfterRead(){
   map<string,Member*>::iterator itera;
   for(itera = membersInfo.begin(); itera != membersInfo.end(); ++itera){
     itera->second->calcRating();
-
-
   }
 }
 
@@ -113,7 +111,6 @@ void MatrixGen::calcCoordinates(){
   organizeComponents();
   insertIntoComponents();
   assignCoordinates();
-  //cout << "N of CC: " << connectedComponents.size() << endl;
   printCoordinates();
   //printComponents();
 
