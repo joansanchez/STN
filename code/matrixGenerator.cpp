@@ -113,6 +113,7 @@ void MatrixGen::calcCoordinates(){
   organizeComponents();
   insertIntoComponents();
   assignCoordinates();
+  //cout << "N of CC: " << connectedComponents.size() << endl;
   printCoordinates();
   //printComponents();
 
@@ -167,7 +168,7 @@ void MatrixGen::assignCoordinates(){
         first = false;
         random_device rd; // obtain a random number from hardware
         mt19937 eng(rd()); // seed the generator
-        uniform_int_distribution<> distr(15, 85);
+        uniform_int_distribution<> distr(150, 850);
         x = distr(eng);
         y = distr(eng);
         membersInfo[*itIn]->setPoints(x, y);
@@ -175,9 +176,9 @@ void MatrixGen::assignCoordinates(){
       else{
         random_device rd; // obtain a random number from hardware
         mt19937 eng(rd()); // seed the generator
-        uniform_int_distribution<> distr(x-15, x+15);
+        uniform_int_distribution<> distr(x-150, x+150);
         int xtmp = distr(eng);
-        uniform_int_distribution<> distr2(y-15, y+15);
+        uniform_int_distribution<> distr2(y-150, y+150);
         int ytmp = distr2(eng);
         membersInfo[*itIn]->setPoints(xtmp, ytmp);
       }

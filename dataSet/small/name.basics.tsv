@@ -1,7 +1,400 @@
-nm1299267	Maria Faillace	\N	\N	producer,miscellaneous	tt1830817,tt1825906,tt3797076
-nm4295152	Amy Baer	\N	\N	producer	tt1825906,tt6765436
-nm1278480	Phil Barry	\N	\N	director,producer,actor	tt1830817,
-nm1296995	Jane Whitehouse	1978	\N	actress	tt1825906
-nm3528642	Shay Hendrix	1983	\N	actress	tt1830817,tt3797076
-nm3528699	Shay Hendrix	1983	\N	actress	tt6765440
-
+nm1299267	Maria Faillace	\N	\N	producer,miscellaneous	tt0337917,tt2323679,tt1830817
+nm4295152	Amy Baer	\N	\N	producer	tt1830817
+nm1278480	Phil Barry	\N	\N	director,producer,actor	tt1825906,tt0349197,tt0471491,tt0336144
+nm1296995	Jane Whitehouse	1978	\N	actress	tt0392956,tt0349060,tt1825906,tt0361520
+nm3528642	Shay Hendrix	1983	\N	actress	tt1472085,tt1825906,tt1734103,tt4387082
+nm4283378	Rambo Adams	\N	\N	editor	tt5773938,tt1825906
+nm4283769	Valentina Cruz	\N	\N	actress	tt7271332,tt2560750,tt6731770,tt1825906
+nm4285409	Loz Lorrimar	\N	\N	actress	tt1825906,tt4636836,tt4636826,tt4387082
+nm4285506	Trev Dolemite	\N	\N	actor	tt3758628,tt1825906
+nm5398498	Rohman	\N	\N	actor	tt1825906
+nm5398814	Simon Watson	\N	\N	actor	tt1825906
+nm8915095	K.P. Jagan	\N	\N	director,writer	tt7088050,tt6765436
+nm8915096	Tejashree	\N	\N	actress	tt6765436
+nm8915097	V.S. Satheesan	\N	\N	producer	tt6765436
+nm8915098	K. Seveal	\N	\N	producer	tt6765436
+nm0393559	Oeke Hoogendijk	\N	\N	director,writer,miscellaneous	tt1520323,tt0945531,tt3797076,tt0164033
+nm2419554	Chris Everts	\N	\N	sound_department,camera_department	tt7751392,tt4653186,tt3797076,tt6243230
+nm2920492	Taco Dibbits	\N	\N		tt0945531,tt3797076,tt4866458,tt0408412
+nm3141946	Wim Pijbes	\N	\N		tt3797076,tt2294764,tt0945531,tt5868158
+nm4480686	Maurice Horsthuis	\N	\N	composer,music_department	tt3797076,tt5047280,tt1071917
+nm5496823	Arjan van Asselt	\N	\N	sound_department	tt2665414,tt3797076
+nm6561555	Andre Plug	\N	\N		tt6120756,tt5917962,tt4818736,tt3797076
+nm0615535	Kamal Musale	\N	\N	director,writer,editor	tt5358076,tt5140144,tt1398398,tt1395039
+nm1555081	Philippe Saire	\N	\N	producer,director,actor	tt0399194,tt2844134,tt1395039,tt2745884
+nm3369288	Fiorella Castanotto	\N	\N	editor	tt1395039
+nm3369444	Marie-Pierre Genecand	\N	\N		tt1395039
+nm3370186	Alexandre Barrelet	\N	\N		tt1395039
+nm0069589	Pier Belton	\N	\N	miscellaneous	tt0120184,tt1531667,tt2334649,tt7659522
+nm0859240	Mia Thomas	\N	\N	actress,camera_department	tt1531667,tt7659522,tt0094481,tt3228994
+nm1050720	Leeza Watstein	\N	\N	miscellaneous,editorial_department,cinematographer	tt0295654,tt1531667,tt5092706,tt7659522
+nm1407348	D.C. Meyer	\N	\N	miscellaneous,actor	tt1531667,tt7659522,tt0371739
+nm2113164	Tom McClain	\N	\N	art_department,set_decorator,actor	tt1531667,tt7659522,tt3228994,tt2618312
+nm2170748	Tom Ralston	\N	\N	sound_department,actor,miscellaneous	tt3377658,tt7659522,tt1545488,tt0768230
+nm2555265	Marcus D. Spencer	1984	\N	actor,producer,miscellaneous	tt7659522,tt2371822,tt3228994,tt4946336
+nm2729583	Jessica Anderson	\N	\N	actress	tt7277382,tt0948538,tt7659522,tt1531667
+nm2871559	Brian Bailey	\N	\N	camera_department	tt1531667,tt1867578,tt3228994,tt7659522
+nm3128049	Ed Gilles III	1964	\N	actor	tt1531667,tt7659522,tt1289397,tt1688451
+nm3221452	Pat Riley	\N	\N	camera_department	tt1531667,tt1931466,tt7659522,tt1200272
+nm3354381	Frank Otis	\N	\N	actor,make_up_department	tt1531667,tt3553606,tt3228994,tt7659522
+nm3461256	Alexander Fletcher	\N	\N	camera_department,cinematographer,producer	tt7659522,tt1531667,tt2070756,tt2071421
+nm3673080	Baboucar Daffeh	\N	\N	actor	tt7659522,tt1339433,tt1700754,tt1531667
+nm3674971	Alicia Vestal	\N	\N	miscellaneous,casting_department	tt1531667,tt7659522
+nm3680703	Thomas Ryan	\N	\N	camera_department,assistant_director	tt1546803,tt7659522,tt1042877
+nm3726275	Grant Ellis	\N	\N	assistant_director,casting_department,production_manager	tt1531667,tt1728102,tt7659522,tt2368914
+nm3826987	Jarvis Moore	\N	\N	actor	tt2120857,tt2078714,tt7659522,tt1531667
+nm3829859	James Devreaux Lewis	\N	\N	actor	tt1531667,tt7659522
+nm3829870	Alphonso Thompson	\N	\N	actor,writer,producer	tt1531667,tt2272388,tt4906744,tt7659522
+nm3829959	Tim Scully	\N	\N	actor	tt3621762,tt7659522,tt2877022,tt1531667
+nm3830049	Afrah Toney	\N	\N	actress	tt1531667,tt7659522
+nm3830891	Noni Galloway	\N	\N	actress	tt1947983,tt2069031,tt7659522,tt1531667
+nm3849093	Cherella Nicholson	\N	\N	art_department	tt1531667,tt7659522
+nm3854173	Rodney Dickens	\N	\N	art_department	tt7659522,tt1531667,tt2618312
+nm3854629	Ibrahim Aldridge	\N	\N	camera_department,actor,miscellaneous	tt1531667,tt7659522,tt3228994,tt1838589
+nm3859955	Phyllis Anderson	\N	\N	actress,director,location_management	tt7659522,tt1528835,tt1531667,tt1781872
+nm3888033	Tim Smith	\N	\N	camera_department,miscellaneous	tt1831617,tt1650396,tt0421356,tt7659522
+nm3962962	James Parker	\N	\N	miscellaneous,assistant_director	tt1531667,tt0485985,tt2234155,tt7659522
+nm4675892	Bijan Khalaji	\N	\N	transportation_department,miscellaneous	tt6546144,tt1531667,tt7659522,tt2536132
+nm4735120	Tammy Drummond	\N	\N	camera_department,miscellaneous	tt1531667,tt3228994,tt7659522
+nm4885130	Sasanka Mouli Velicherla	\N	\N	miscellaneous,visual_effects,camera_department	tt7659522,tt3228994,tt5640080,tt1531667
+nm5046333	Allen Clemons	\N	\N	camera_department	tt2397447,tt1531667,tt7659522,tt3228994
+nm5058500	Benjamin Colbert	\N	\N	actor,make_up_department,miscellaneous	tt3228994,tt1531667,tt5640080,tt7659522
+nm5102523	Jackie Woodard	\N	\N	camera_department,miscellaneous	tt3228994,tt7659522,tt1531667
+nm5103033	Lizeth Barraza	\N	\N	camera_department,miscellaneous	tt1531667,tt7659522,tt3228994
+nm5349631	Latisha Saxton	\N	\N	costume_department	tt7659522,tt1531667
+nm5402333	Joan Estrada	\N	\N	actress	tt7659522,tt1531667,tt1712135,tt1618432
+nm5468814	Sammie Lee Hill	\N	\N	music_department	tt2618312,tt1531667,tt7659522,tt5640080
+nm5481720	Gabriel Valencia	\N	\N	camera_department,cinematographer	tt2831478,tt7659522,tt1531667
+nm5482763	Tina Edwards	\N	\N	make_up_department,producer	tt7659522,tt2516756,tt1531667,tt2618312
+nm5575126	Noel Castrillo	\N	\N	actor,camera_department,production_manager	tt1531667,tt7659522,tt6603700,tt7520980
+nm5618319	Brian Storm	\N	\N	camera_department,editor	tt2831478,tt7707636,tt7659522,tt1531667
+nm5718781	Pat Francis	\N	\N	camera_department,producer,director	tt3078752,tt2969272,tt1531667,tt7659522
+nm5884963	Holly Temperino	\N	\N	make_up_department,costume_department,special_effects	tt3078752,tt4102788,tt7659522,tt1531667
+nm5963320	Kara Pangelinan	\N	\N	make_up_department,costume_department,art_department	tt3078752,tt3228994,tt7659522,tt1531667
+nm5982174	Robert West	\N	\N	camera_department	tt7659522,tt1531667,tt3228994
+nm5987050	Jay Cinesaros	\N	\N	art_director,production_designer,miscellaneous	tt5640080,tt3228994,tt1531667,tt7659522
+nm5987052	Chira Eaton	\N	\N	costume_department	tt3228994,tt7659522,tt1531667
+nm6085690	Phaethon Devlin Brown	\N	\N	actor	tt1531667,tt3330800,tt7659522
+nm6155463	Sydney Schiller	\N	\N	art_department,actor	tt1531667,tt7659522,tt3078752,tt2618312
+nm6155464	Arlandris Tarvins	\N	\N	miscellaneous	tt1531667,tt7659522
+nm6155468	Djuan Carlisle	\N	\N	editorial_department	tt7659522,tt3228994,tt1531667
+nm6155469	Tina Hurely	\N	\N	make_up_department	tt3228994,tt1531667,tt7659522
+nm6155471	Henrietta Hames	\N	\N	miscellaneous	tt7659522,tt1531667
+nm6155472	Tyrae Bell	\N	\N	miscellaneous	tt7659522,tt1531667
+nm6155473	Andrea Caplan	\N	\N	miscellaneous	tt7659522,tt1531667
+nm6687008	Anthony Matthews	\N	\N	actor	tt3920866,tt7659522,tt1531667
+nm6700347	Jordan Ghanma	\N	\N	camera_department	tt7659522
+nm7357746	John Larson	\N	\N	actor	tt4720844,tt7659522
+nm7702182	Michael Sorensen	\N	\N	art_department	tt2618312,tt7659522,tt1531667
+nm7830718	Andrienne Garcia	\N	\N	camera_department	tt2980472,tt1531667,tt7659522
+nm8001019	Jared Chance Taylor	\N	\N	composer,sound_department	tt1531667,tt5554608,tt7659522
+nm8153748	Jessica Wosik	\N	\N	producer,miscellaneous	tt7659522,tt1531667,tt5640080
+nm8503862	Omari Skinner	\N	\N	actor	tt1531667,tt7659522
+nm8503863	T.J. Burke	\N	\N	actor	tt7659522,tt1531667
+nm8503864	Belita Aaron	\N	\N	costume_department	tt7659522,tt1531667
+nm8503865	LaNeisha Halcomb	\N	\N	costume_department	tt7659522,tt1531667
+nm8503866	Jeffery Bennett	\N	\N	editorial_department	tt7659522,tt1531667
+nm8503867	Charles E. Johnson	\N	\N	editorial_department	tt7659522,tt1531667
+nm8503868	Ronlenia Davis	\N	\N	make_up_department	tt1531667,tt7659522
+nm8503870	Jer-Rod Jones	\N	\N	make_up_department	tt7659522,tt1531667
+nm8503873	Deshay Jones	\N	\N	sound_department	tt1531667,tt7659522
+nm8503874	Joseph Jefferson	\N	\N	sound_department	tt1531667,tt7659522
+nm8519372	Sahil Haider	\N	\N	special_effects	tt1531667,tt4621002,tt7659522
+nm8539699	Monique Ranae	\N	\N	miscellaneous	tt1531667,tt7659522
+nm8739046	Brandon Lurie	\N	\N	composer	tt7659522,tt1531667
+nm8739047	Udi Ben Lou Lou	\N	\N	composer	tt1531667,tt7659522
+nm1737295	Dave Wooley	\N	\N	writer,music_department,producer	tt6170406,tt7082992,tt0423027,tt0159876
+nm0646894	Jonathan Oliver	\N	\N	actor,sound_department	tt1374989,tt0086190,tt8438312,tt1927164
+nm1109897	David Levasseur	\N	\N	actor	tt1927164,tt0305866
+nm2082414	Ashley Williamson	\N	\N	actress,stunts	tt1927164,tt0486771
+nm2230515	John Blanchette	\N	\N	producer,sound_department	tt1927164,tt1572496
+nm3533420	Nathan Oliver	\N	\N	writer,director,producer	tt1927164,tt3723788,tt5286804,tt7888644
+nm4451252	Nelson McGuffin	\N	\N	actor	tt1927164
+nm4451302	Ricky Anderson	\N	\N	actor	tt1927164
+nm4451311	Butch McDougal	\N	\N	actor	tt1927164
+nm4451485	Jon Judkins	\N	\N	actor	tt1927164
+nm4451517	Chelsea Oullette	\N	\N	actor	tt1927164
+nm4451567	Liz Laplante	\N	\N	actor	tt1927164
+nm4451674	Narayana Johnson	\N	\N	actor	tt1927164
+nm4451880	Sam Hallett	\N	\N	camera_department	tt1927164
+nm4451947	Dana Bagley	\N	\N	actor	tt1927164
+nm4452018	Jeff Johnson	\N	\N	actor,assistant_director	tt1927164
+nm4452093	Dianna Leighton	\N	\N	actor	tt1927164
+nm4452140	Deidra Levasseur	\N	\N	editor	tt1927164
+nm4452194	Chris Raven	\N	\N	actor	tt1927164
+nm4452208	Paul Berube	\N	\N	actor	tt1927164
+nm4452325	Morgan Kiser	\N	\N	cinematographer,art_department,editor	tt1927164,tt3828516
+nm4452465	Steve Archer	\N	\N	actor	tt1927164
+nm4598501	Camara Johnson	\N	\N	actress	tt1927164
+nm4602625	Laksmis Johnson	\N	\N	actress	tt1927164
+nm4975069	Matthew Dobson	\N	\N	make_up_department,director,actor	tt3828516,tt1927164
+nm5844682	John Gagnon	\N	\N	actor	tt1927164,tt2928538,tt1986185
+nm7095393	Renee Felini	\N	\N	miscellaneous	tt1927164
+nm1250527	Bruno Alexiu	\N	\N	composer,soundtrack	tt0157016,tt8133662,tt8342104,tt0330247
+nm2070834	Yves Ringer	\N	\N	producer,writer,production_designer	tt8133662,tt4545832,tt8342104,tt1810520
+nm6225877	Thomas Resimont	\N	\N	sound_department	tt2151217,tt6076858,tt8342104,tt3473414
+nm9801899	Pauline Bouquieaux	\N	\N	actor	tt8342104
+nm9801900	Martin Bouquieaux	\N	\N	actor	tt8342104
+nm3083398	Mei Ye	\N	\N	actress,writer	tt1267280,tt7461906
+nm3084981	Kehong Zheng	\N	\N	director	tt1267280
+nm3085311	Zhiqiang Gao	\N	\N	actor	tt1267280,tt4793330
+nm0160448	Bill Christmas	\N	\N	actor	tt0058648,tt0059356,tt0144731,tt0062844
+nm0760643	Alfonso San Félix	\N	\N	actor	tt0129685,tt0073553,tt0069580,tt0059356
+nm0832685	James L. Storrow Jr.	\N	\N	producer	tt0059356
+nm5712490	Charlie Toledo	\N	\N	producer	tt2960920,tt2960912
+nm0028494	Sergio Andreucci	\N	\N	actor	tt0093112
+nm0046513	Robert Bagala	\N	\N	camera_department	tt0118799,tt0093112
+nm0070654	Sara Beneck	\N	\N	actress	tt0093112,tt0178530
+nm0079297	Nerio Bettelli	\N	\N	actor	tt0093112
+nm0079298	Vera Bettelli	\N	\N	actress	tt0093112
+nm0129385	Patrizia Calcagni	\N	\N	actress	tt0093112
+nm0132084	Marina Campanale	\N	\N	costume_designer,costume_department,actress	tt0106597,tt0101378,tt0093112,tt0119055
+nm0134068	Alessandro Cannavaccio	\N	\N	actor	tt0093112
+nm0161905	Daniela Ciarrocchi	\N	\N	actress	tt0093112
+nm0195640	Yuri D'Emidio	\N	\N	actor	tt0093112
+nm0210517	Giuseppe De Nardis	\N	\N	assistant_director,miscellaneous	tt0093112
+nm0232533	Nicoletta Donin	\N	\N	costume_department,costume_designer	tt0111124,tt0093112,tt0254038,tt1801061
+nm0267851	Cesare Farnetani	\N	\N	actor	tt0093112
+nm0268757	Sandra Fassio	\N	\N	actress	tt0093112
+nm0270051	Antonio Fede	\N	\N	actor	tt0093112
+nm0271218	Sandro Felicetti	\N	\N	actor	tt0093112
+nm0272744	Stefano Fermani	\N	\N	actor	tt0093112
+nm0309787	Giuliana Gatti	\N	\N	actress	tt0093112,tt0094648
+nm0531487	Armando Macchia	\N	\N	actor	tt0093112
+nm0557796	Maria Cristina Mastrangeli	\N	\N	actress	tt0097870,tt0098063,tt0765263,tt0093112
+nm0557861	Federica Mastroianni	\N	\N	actress	tt0087909,tt0093112,tt0086358,tt0112674
+nm0595058	Silvia Mocci	\N	\N	actress,writer	tt0106286,tt3664582,tt0101337,tt0093112
+nm0600094	Donato Montillo	\N	\N	editorial_department	tt0093112
+nm0603748	Maurizio Morelli	\N	\N	actor	tt0093112
+nm0613400	Vincenzo Mura	\N	\N	camera_department	tt0090040,tt0093112,tt0122512,tt0210767
+nm0636536	Anna Notariale	\N	\N	actress	tt0093112
+nm0637707	Maura Nuccetelli	\N	\N	writer,production_manager	tt0329731,tt0138280,tt3242776,tt0093112
+nm0661743	Dario Parisini	\N	\N	actor	tt0095834,tt0208480,tt0093112,tt0089136
+nm0681534	Francesco Piccioni	\N	\N	actor	tt0093112
+nm0681535	Giuseppe Piccioni	1953	\N	writer,director,actor	tt0282701,tt0115992,tt0093112,tt0172477
+nm0686224	Clio Pizzingrilli	\N	\N	actor	tt0093112
+nm0713734	Danilo Rea	\N	\N	composer	tt0105769,tt0093112,tt0094015,tt6898134
+nm0723209	Gabriele Ricci	\N	\N	actor	tt0093112
+nm0744249	Marco Rossi	\N	\N	actor	tt0178002,tt0093112
+nm0744273	Nazareno Rossi	\N	\N	actor	tt0093112
+nm0757420	Salvatore Saladini	\N	\N	actor	tt0093112,tt0094657
+nm0768622	Chiara Sbarigia	\N	\N	actress	tt0093112
+nm0797194	Lella Sieni	\N	\N	actress	tt0093112
+nm0822210	Daniela Stanga	\N	\N	actress	tt0166686,tt0178132,tt0093112,tt0379306
+nm0826303	Mario Stella	\N	\N	actor	tt0093112
+nm0850072	Gianluca Tappata	\N	\N	actor	tt0093112
+nm0851022	Ardenia Tassotti	\N	\N	actress	tt0093112
+nm0866502	Germana Tomassini	\N	\N	actress	tt0093112
+nm0875688	Gianfranco Tucci	\N	\N	actor	tt0093112
+nm0895865	Valeria Viccei	\N	\N	actress	tt0093112
+nm0900166	Mauro Vitturini	\N	\N	art_department	tt0085240,tt0095497,tt0093112,tt0089584
+nm1001413	Rita Mazzanti	\N	\N	make_up_department	tt0093112,tt0204856,tt0089339,tt0284404
+nm1014103	Guido Lentini	\N	\N	sound_department	tt0188348,tt0250955,tt0093112,tt0289140
+nm9150291	Danilo Cipriani	\N	\N	art_department	tt0093112
+nm9150292	Roberta Orlandini	\N	\N	camera_department	tt0093112
+nm9150293	Anna Maria Zanelli	\N	\N	costume_department	tt0093112
+nm9150294	Peppe Videtti	\N	\N	music_department	tt0093112
+nm9150295	Fausto Buono	\N	\N	sound_department	tt0093112
+nm9150296	Maurizio Jacona	\N	\N	miscellaneous	tt0093112
+nm9150297	Antonio Russo	\N	\N	miscellaneous	tt0093112
+nm9150298	Antonino Accolla	\N	\N	miscellaneous	tt0093112
+nm9150299	Nichi Barbera	\N	\N	miscellaneous	tt0093112
+nm9150300	Emanuele Fantoli	\N	\N	miscellaneous	tt0093112
+nm0097879	Kartik Basu	\N	\N	art_director,set_decorator,production_designer	tt0358063,tt0072972,tt7351230,tt0156745
+nm0315905	Nabendu Ghosh	\N	\N	writer,actor,director	tt0139447,tt0216110,tt0052411,tt0358063
+nm0363007	Hari	\N	\N	actor,miscellaneous,camera_department	tt0358063,tt0083349,tt0085361,tt0254927
+nm0441276	Suresh Kathuria	\N	\N	music_department,sound_department	tt0150992,tt0113526,tt0358063,tt0099652
+nm0471438	Gopi Krishna	1933	\N	miscellaneous,actor,composer	tt0154749,tt0358063,tt0061046,tt0216110
+nm0596008	Madan Mohla	\N	\N	producer,director	tt0358063,tt0359135,tt0351714,tt0279021
+nm0713593	S. Ali Raza	\N	2007	writer	tt0341563,tt0358063,tt0044318,tt0148706
+nm0788899	Pal Sharma	\N	\N	actor	tt0232960,tt0358063,tt0049041,tt0213773
+nm0802364	Lata Sinha	\N	\N	actress	tt0215219,tt0055783,tt0236021,tt0358063
+nm0802365	Madan Sinha	\N	\N	cinematographer,director	tt0358063,tt0351714,tt0359135,tt0156923
+nm1021410	C.S. Dubey	\N	\N	actor,assistant_director,production_manager	tt0091328,tt1573851,tt0319121,tt0358063
+nm1024919	Mumtaj	\N	\N	actress	tt0361818,tt0358063,tt0280845,tt3907636
+nm1029667	Bijoy Ghosh	\N	\N	cinematographer,art_department,art_director	tt0156745,tt0048574,tt0358063,tt7543474
+nm1040429	Kamaldeep	\N	\N	actor,producer	tt0172188,tt0133024,tt0358063,tt0214841
+nm1124379	Akki Hemchandra	\N	\N	sound_department	tt0358063,tt0214841,tt0091328,tt0480572
+nm1185450	Lachhmandass	\N	\N	editor,actor,sound_department	tt0147811,tt0065764,tt0058921,tt0358063
+nm1199139	M.S. Dass	\N	\N	stunts,miscellaneous	tt0358063,tt0076167,tt0067651,tt0341563
+nm1214610	Madhup Sharma	\N	\N	actor	tt0154685,tt0358063,tt0069711,tt0066758
+nm1341621	Ram Kumar	\N	\N	miscellaneous,camera_department,art_department	tt0358063,tt0175423,tt0178204,tt0318391
+nm1618199	Shahid Akberpuri	\N	\N	writer	tt0358063,tt0359135
+nm1618994	Krishna Chaubal	\N	\N	make_up_department	tt0351714,tt0358063,tt0259170,tt0359135
+nm1619092	Roshanlal Mohla	\N	\N	production_manager,miscellaneous	tt0351714,tt0358063,tt0359135
+nm1619108	Prem Sharma	\N	\N	production_manager,miscellaneous	tt0358063,tt0359135
+nm1619962	Gunavant Matlawala	\N	\N	miscellaneous	tt0358063,tt0359135
+nm1647615	N.K. Tiwari	\N	\N	miscellaneous,camera_department	tt0246914,tt0358063,tt0077609
+nm1751831	Chagan	\N	\N	make_up_department	tt0259170,tt0358063,tt0359135,tt0073652
+nm1843196	Diljit Singh	\N	\N	assistant_director,director	tt0358063,tt0341563,tt0097926,tt0239495
+nm1879782	Brij Kishan	\N	\N	editorial_department	tt0056379,tt0358063,tt0284456,tt0157944
+nm2124491	A.S. Mani	\N	\N	make_up_department,writer	tt0320522,tt0391720,tt0074949,tt0358063
+nm2170659	Ram Multani	\N	\N	costume_department,costume_designer	tt0268216,tt0260156,tt0367921,tt0358063
+nm2212322	Basavraj Kinagi	\N	\N	camera_department	tt0351714,tt0358063
+nm2213403	Jagdish R. Iyer	\N	\N	costume_department	tt0358063,tt0351714
+nm2269377	Rafique I. Bux	\N	\N	sound_department	tt0157917,tt0158071,tt0358063
+nm2301244	Dinesh Khanna	\N	\N	assistant_director	tt0358063
+nm2305117	Surender Singh Bhandari	\N	\N	production_manager	tt0358063
+nm2307105	Parduman Kumar Mohla	\N	\N	miscellaneous	tt0358063
+nm2308434	M.S. Kavia	\N	\N	assistant_director	tt0358063
+nm2893555	Ramnath S. Iyer	\N	\N	costume_department	tt0358063,tt0147811,tt0268416,tt0058921
+nm0398584	Rolandos Hrelias	\N	\N	actor	tt0256255,tt0071322,tt0231876,tt0236152
+nm1330225	Artemis Tsarmi	\N	\N	actress	tt0230338,tt0229979,tt0456168,tt0231876
+nm2583536	Petrakis Maroudas	\N	\N	actor	tt0231876
+nm0033966	Clive Arden	\N	\N	writer	tt0015781,tt0015335
+nm0383812	Betty Hilburn	\N	\N	actress	tt0015335,tt0011268,tt0017702,tt0195750
+nm0181247	Georg Corten	\N	1987	actor	tt0260058,tt0052088,tt0063412,tt0057028
+nm0246884	Wolfgang Dörich	1918	1993	actor	tt0057028,tt0042633,tt0271267,tt0064557
+nm0718106	Gottfried Reinhardt	1913	1994	director,producer,writer	tt0057028,tt0049928,tt0055539,tt0046770
+nm0912236	Elfriede Warhanek	\N	\N	miscellaneous	tt0052200,tt0049460,tt0057028,tt0048403
+nm2365778	Günter Klein	\N	\N	miscellaneous	tt0050354,tt0057028,tt0051963
+nm2861422	Roland Beyer	\N	\N	producer	tt0064967,tt0057028
+nm2864701	Frank Braun	\N	\N	production_manager	tt0057028,tt0439198
+nm2868148	Paula Brezina	\N	\N	costume_department	tt0057028
+nm2868875	Franz Prokosch	\N	\N	costume_department	tt0057028
+nm2077045	Olivier Bombarda	\N	\N	composer,actor,writer	tt0450470,tt0824298,tt2351277,tt1356893
+nm3255506	Mohamed Zineddaine	\N	\N	director,writer,producer	tt6073544,tt2030354,tt2351277,tt2030378
+nm4960479	Najat El Ouafi	\N	\N	actress	tt2351277,tt2302629
+nm4969732	Fayçal Azizi	\N	\N	actor	tt2208885,tt2351277
+nm4999083	Hajar Graigaa	\N	\N	actress	tt2351277
+nm6442601	Chaimae Ejjbiri	\N	\N	actress	tt3651642,tt2351277,tt3551796
+nm2593103	Theresa Galeani	1985	\N	actress,producer,special_effects	tt1736040,tt1687283,tt1613679,tt2631554
+nm3832227	Madelaine Kemp	\N	\N	actress,cinematographer,production_manager	tt1613679,tt1736040,tt1696182,tt1912352
+nm3832467	Austin Handfield	\N	\N	actor,miscellaneous,transportation_department	tt1736040,tt1613679,tt1912352,tt1696182
+nm3833003	Nicholas Boise	\N	\N	director,writer,editor	tt1736040,tt4731476,tt1912352,tt1613679
+nm3836212	Jeremy Kemp	\N	\N	actor	tt1736040,tt1613679
+nm4008237	Joel Bantel	\N	\N	actor	tt1736040,tt1696182
+nm4178205	Jeanne Boise	\N	\N	miscellaneous	tt1736040
+nm4211178	Kim Kemp	\N	\N	actress	tt1736040
+nm2262855	Jacqueline Posey-Hilton	\N	\N	actress,producer,casting_department	tt0349575,tt3079150,tt0418223,tt5154768
+nm3307462	Janet Handy	\N	\N	actress	tt1638905,tt3552008,tt7125084,tt3079150
+nm4142394	Andrew Laubscher	\N	\N	actor	tt3079150,tt1648190,tt5103758,tt1942596
+nm4250705	Chantell Christopher	\N	\N	actress,writer	tt3079150,tt0497522,tt1808672
+nm4670952	Don Bowie	\N	\N	actor,producer	tt3735398,tt2187450,tt3079150,tt1980003
+nm4988096	Regina Robinson	\N	\N	camera_department	tt3079150,tt0423652
+nm5828817	Shene Commodore	\N	\N	actress	tt3079150,tt7849528,tt8612900
+nm5828818	Margo Morrer	\N	\N	actress	tt3079150
+nm5828819	Lonnie Moore	\N	\N	actor	tt3079150
+nm5828820	Kevin Atkins	\N	\N	actor	tt3079150
+nm5828821	Pj Hilton	\N	\N	actor,producer	tt3079150,tt6356354,tt5154768
+nm5828822	Merida Childress	\N	\N	actress	tt3079150
+nm5828823	Hank Stewart	\N	\N	actor	tt3079150
+nm5828824	Gwen Lindsey	\N	\N	actress	tt3079150
+nm5828825	Kimoni Hilton	\N	\N	actor	tt3079150
+nm5828826	Audra Davison	\N	\N	actress	tt3079150
+nm5828827	Karl Miller	\N	\N	actor	tt3079150
+nm5828828	Tim Sadipe	\N	\N	actor	tt3079150
+nm5828831	Kim Davison	\N	\N	producer	tt3079150
+nm5828832	Robert Davison	\N	\N	producer	tt3079150
+nm5828833	Sara Hilton	\N	\N	producer	tt3079150
+nm5828834	Jason Rice	\N	\N	camera_department	tt3079150
+nm5828835	Carolyn Richerdson	\N	\N	miscellaneous	tt3079150
+nm5828836	Victora Porter	\N	\N	miscellaneous	tt3079150
+nm1602541	Thomas Schwank	\N	\N	writer,director,editor	tt0115088,tt0118378,tt6464500,tt0927944
+nm0053110	Bruno Baratti	\N	1996	writer,director	tt0061182,tt0061438,tt0053105,tt0168686
+nm0084419	Lilly Bistrattin	\N	\N	actress	tt0061438,tt0058899,tt0056210,tt0145420
+nm0182648	Claudine Coster	1939	\N	actress	tt0054761,tt0061438,tt0313928,tt0447015
+nm0216123	André Delage	\N	\N	editor,producer	tt0141721,tt0069147,tt0065515,tt0061438
+nm0245190	Gilles Duvernier	\N	\N	writer	tt0061438
+nm0331616	André Hossein	\N	1983	composer,soundtrack,editor	tt0053255,tt0061438,tt0217895,tt0061112
+nm0332078	Alain Gottvalles	\N	\N	actor	tt0059452,tt2857334,tt0061438
+nm0350785	Charles Gérard	1926	\N	actor,director,writer	tt0188308,tt0195028,tt0061438,tt0052337
+nm0521855	André Louis	\N	\N	sound_department	tt3863374,tt0137443,tt0129431,tt0061438
+nm0561448	Jacques Mawart	\N	\N	production_designer,art_director,set_decorator	tt0135835,tt0050997,tt0060374,tt0061438
+nm0633687	Noëlle Noblecourt	1942	\N	actress	tt0315869,tt1919025,tt0218230,tt0061438
+nm0693539	Patrice Pouget	\N	\N	cinematographer,camera_department	tt0228561,tt0065069,tt0061438,tt0061138
+nm0756760	Raoul Saint-Yves	\N	\N	actor	tt0061438,tt0067323,tt0057870,tt0155705
+nm0842232	François Sweerts	\N	\N	director,writer,producer	tt7666330,tt0061438,tt0188308,tt7763532
+nm0842233	Michel Sweerts	\N	\N	production_manager	tt0061438,tt0188308
+nm0490547	Hao-Yi Liu	\N	\N	actress	tt0200124,tt0165193,tt5848944,tt0202135
+nm2634640	Chi-Sheng Tse	\N	\N	actor,writer,assistant_director	tt0121637,tt0202135,tt0121892,tt0101643
+nm2747913	Chen-Tung Wu	\N	\N	miscellaneous,production_manager	tt0202135,tt0079483,tt0089519,tt0187083
+nm3251954	Huang-chi Pai	\N	\N	actor	tt0202135
+nm3252193	Jui-Li Pan	\N	\N	actor	tt0202135,tt0199850,tt0087679,tt2823786
+nm4916815	Dipankar Sarkar	\N	\N	assistant_director	tt1394310,tt8347882
+nm5176429	Subhankar Bhar	\N	\N	cinematographer	tt8347882,tt3119172,tt7305704,tt6903200
+nm7715465	Aniruddha Dasgupta	\N	\N	assistant_director,writer,producer	tt8347882,tt7605744,tt7351702,tt4115752
+nm9263470	Aritra Sen	\N	\N	producer,assistant_director,production_designer	tt7351702,tt8347882,tt8653370
+nm9421055	Riddhie Basak	\N	\N	assistant_director	tt7351702,tt7605744,tt8347882,tt8653370
+nm9948850	Aranyak Chatterjee	\N	\N	assistant_director	tt8347882
+nm0474447	Sandra Kulbach	\N	\N	cinematographer,producer,sound_department	tt0330991,tt5228184,tt1796683,tt0417525
+nm4332182	Kanwal Sethi	\N	\N	director,writer,producer	tt5228184,tt4232066,tt1845198,tt1851923
+nm5030572	Sumner Jules Glimcher	1924	2018	director,writer,cinematographer	tt2386177,tt2386333
+nm0091114	Géza Bodó	\N	\N	actor	tt0074744
+nm0218385	Hedvig Demeter	1926	1981	actress	tt0070548,tt0074744,tt0052349,tt7379882
+nm0379296	Zoltán Hermann	\N	\N	actor	tt0074744
+nm0482102	Péterné Lakatos	\N	\N	actress	tt0074744
+nm0598405	Balázs Monori	\N	\N	actor	tt0108827,tt2073261,tt0074744,tt0134230
+nm0617767	Márta Mészáros	1931	\N	director,writer,editor	tt0074744,tt0084388,tt0073948,tt0407852
+nm0813924	Ferenc Somló	1918	2009	actor,assistant_director	tt0054009,tt0074744,tt0055290,tt5094774
+nm0844075	Lajos M. Szilágyi	1944	\N	actor	tt0074744
+nm0844086	János Szili	\N	\N	actor	tt0074744
+nm0896944	Gyöngyvér Vigh	\N	\N	actress	tt0067467,tt0073948,tt0074744,tt0072241
+nm0072853	Nora Bentley	\N	\N	make_up_department	tt0048680,tt0045259,tt0045030,tt0048258
+nm0165061	D.A. Clarke-Smith	1888	1959	actor	tt0026649,tt0024073,tt0022920,tt0045030
+nm0182303	Sam Costa	1910	1981	actor,soundtrack	tt0038844,tt0045030,tt0043884,tt0040687
+nm0206067	Beatrice Dawson	1908	1976	costume_designer,costume_department,art_department	tt0045030,tt0058425,tt0058754,tt0069987
+nm0288714	Harry Fowler	1926	2012	actor,editorial_department,miscellaneous	tt0045030,tt0157236,tt0035429,tt0039478
+nm0310025	Alexander Gauge	1914	1960	actor	tt0202483,tt0047706,tt0051310,tt0045030
+nm0360262	David Hannaford	1942	\N	actor	tt0045030,tt0041704,tt0049195,tt0044008
+nm0365692	Kathleen Harrison	1892	1995	actress,soundtrack	tt0044008,tt0029310,tt0045030,tt0024055
+nm0366245	Diane Hart	1926	2002	actress	tt0045030,tt1647290,tt4148188,tt0249821
+nm0371687	James Hayter	1907	1983	actor,writer	tt0045030,tt0063385,tt0048283,tt0045197
+nm0372214	Joan Heal	1922	1998	actress,soundtrack	tt0047040,tt0043618,tt0045030,tt4974464
+nm0486538	Noel Langley	1911	1980	writer,director,producer	tt0055458,tt0048458,tt0032138,tt0045030
+nm0533131	Barry MacKay	1906	1985	actor,soundtrack,writer	tt0048132,tt0029992,tt0028918,tt0045030
+nm0536114	Suria Magito	1903	1987	writer,miscellaneous	tt0038574,tt0045030,tt0045056,tt1401006
+nm0573793	Jack McNaughton	1905	1990	actor	tt0044876,tt0043399,tt0045030,tt0040145
+nm0591695	George Minter	\N	1966	producer,miscellaneous,writer	tt0052315,tt0045030,tt0047970,tt0052623
+nm0615463	Lionel Murton	1915	2006	actor	tt0053496,tt0177920,tt0066206,tt0045030
+nm0861185	June Thorburn	1931	1967	actress	tt0045755,tt0161126,tt0045030,tt0047310
+nm0873754	Cecil Trouncer	1898	1953	actor	tt0030637,tt0045030,tt0040407,tt4418106
+nm0923664	Alan Wheatley	1907	1991	actor	tt0045030,tt0039220,tt0038390,tt0047706
+nm1508451	Dane Williams	1986	\N	cinematographer,editor,sound_department	tt2258320,tt3727954,tt6274756,tt3113842
+nm3746414	Zubair Simonson	\N	\N	writer,producer,actor	tt3113854,tt3113842,tt2011269,tt1606721
+nm5431678	Leon Axt	\N	\N	actor	tt5478670,tt2576840,tt3113842
+nm5457618	Dawen Huang	\N	\N	cinematographer,camera_department	tt3113842,tt2615500,tt2662524
+nm5869752	John L. Ponger	\N	\N	director,actor,producer	tt5147466,tt3113854,tt3113842
+nm5869753	Gordon White	\N	\N	writer,producer	tt3113842
+nm5869776	Rachel Jane	\N	\N	actress	tt3872876,tt3113842
+nm5869778	Megan Heinrich	\N	\N		tt3113842
+nm5869779	Gabriel Quiroz	\N	\N		tt3113842
+nm5869780	Blake J. Ruehrwein	\N	\N		tt3113842
+nm5869781	Megan Mallory	\N	\N		tt3113842
+nm5869782	Laree Thomas	\N	\N		tt5209286,tt3113842
+nm5869783	Laura Rubio	\N	\N		tt3113842
+nm5869784	David Young Lee	\N	\N	producer,director,writer	tt3113842,tt3727954
+nm5869785	Jake Laine	\N	\N	composer	tt3113842
+nm5962516	J. Max Baker	\N	\N	actor,special_effects,producer	tt8064966,tt3113842,tt8483242
+nm0936552	Joseph Wishy	1934	1993	producer	tt0233023,tt3533288,tt0084524,tt2758730
+nm1590025	Muriel Balash	\N	\N	editor,director	tt0131445,tt0064511,tt5704972,tt0084524
+nm0944357	Lefteris Xanthopoulos	\N	\N	director,writer,producer	tt0263517,tt1175182,tt0101769,tt1179852
+nm1481575	Yorgos Kozobolis	\N	\N	actor,producer	tt1179852,tt0385456
+nm2914390	Giorgos Xanthopoulos	\N	\N	sound_department	tt1364457,tt1339337,tt1179852
+nm2914677	Nikos Mavromatis	\N	\N	cinematographer	tt1179852
+nm0776858	Manfred Schuster	1919	\N	actor	tt0457932,tt0345503,tt0042422,tt0347558
+nm1051842	Ernest Roberts	\N	\N	writer	tt0236856,tt0345503
+nm0111895	Bud Brooks	\N	\N	art_director,art_department	tt0068447,tt0053583,tt0069012
+nm0205156	Michael Davis	\N	\N	actor	tt0056757,tt0053583,tt0057765,tt0058371
+nm0423959	Ingemar Johansson	1932	2009	actor	tt0053583,tt0061596,tt0059209,tt0058679
+nm0544202	Ben Mantz	1922	2004	actor,art_department,miscellaneous	tt0051221,tt0051436,tt0041107,tt0053583
+nm0609864	Leonard Mountain Chief	1939	1999	actor,soundtrack	tt0111794,tt0120786,tt0098619,tt0053583
+nm0703736	Charles Quinlivan	1924	1974	actor	tt0053583,tt0051221,tt0047739,tt0050953
+nm0756340	Mort Sahl	1927	\N	actor	tt0057200,tt0053583,tt0087817,tt0053546
+nm0821146	Clem Stadler	\N	\N	actor,miscellaneous	tt0053583,tt0060098
+nm0874995	Marie Tsien	\N	\N	actress	tt0056745,tt0053583,tt0052472,tt0054510
+nm4796035	Jack Botthof	\N	\N	camera_department	tt0053351,tt0053583,tt0052771,tt0052606
+nm4808837	James Neff	\N	\N	art_department	tt0053583
+nm4809736	Emit Dambacher	\N	\N	camera_department	tt0053583
+nm4810335	Robert Smiley	\N	\N	sound_department	tt0053583
+nm0266552	Magda Faluhelyi	1946	\N	actress	tt0070763,tt0174760,tt0067786,tt0095275
+nm0549548	Gyula Marosi	1941	\N	miscellaneous,writer,actor	tt0084389,tt0067215,tt0070763,tt0171876
+nm0844506	János Szücs	\N	\N	assistant_director,miscellaneous,director	tt0070763,tt0077982,tt0051753,tt6319464
+nm1296321	Rudolf Olaszi	\N	\N	actor,location_management	tt0070273,tt0080577,tt0070763
+nm1355198	Klára Göndör	1921	\N	actress	tt2662324,tt0357218,tt0070763,tt0154079
+nm1816071	Gyula Losonczi	\N	\N	actor	tt0070763
+nm1816176	Béla Mezey	\N	\N	actor	tt0070763
+nm1816222	Imre Márton	\N	\N	actor	tt0070763
+nm1816636	János Szakály	\N	\N	actor	tt0070763
+nm1816827	Imre Zerényi	\N	\N	actor	tt0070763
+nm1816960	Márta Blaha	1939	\N	actress	tt0174632,tt0070763
