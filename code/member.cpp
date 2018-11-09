@@ -21,3 +21,11 @@ void Member::calcRating(){
 float Member::getRating(){
   return rating;
 }
+void Member::setPoints(int xin, int yin){
+  x=xin;
+  y=yin;
+}
+
+pair<int, int> Member::getPoints(){
+  return make_pair(x, y);
+}

@@ -34,10 +34,10 @@ void MatrixGen::generateMatrix(map<string, Film*> films){
     }
   }
   updateRatingsAfterRead();
-  //showRatings();
   //showAdjacencyMatrix();
   printToFile();
   calcCoordinates();
+  //showRatings();
   cout << "Generating adjacency matrix completed" << endl;
 }
 map<string,Member*> MatrixGen::getMembersInfo(){
@@ -59,7 +59,8 @@ void MatrixGen::updateRatingsAfterRead(){
 void MatrixGen::showRatings(){
   map<string,Member*>::iterator itera;
   for(itera = membersInfo.begin(); itera != membersInfo.end(); ++itera){
-    cout << itera->first << " " << itera->second->getRating()<<endl;
+    pair<int, int> position = itera->second->getPoints();
+    cout << itera->first << " " << itera->second->getRating() << " position: " << position.first << " " << position.second <<endl;
   }
 }
 
@@ -94,12 +95,28 @@ void MatrixGen::printToFile(){
   cout << "Writing on file AdjacencyMatrix.txt completed" << endl;
 }
 
+void MatrixGen::printCoordinates(){
+  cout << "Writing on file NodeCoordinates.txt" << endl;
+  ofstream myfile;
+  myfile.open ("outputs/NodeCoordinates.txt");
+  map<string,Member*>::iterator it;
+  for(it = membersInfo.begin(); it != membersInfo.end(); ++it){
+    myfile << it->first << " ";
+    pair<int, int> pos = it->second->getPoints();
+    myfile << pos.first << " " << pos.second << endl;
+  }
+  myfile.close();
+  cout << "Writing on file NodeCoordinates.txt completed" << endl;
+}
+
 void MatrixGen::calcCoordinates(){
   organizeComponents();
-  map<string, int>::iterator itprint;
-  for (itprint = whichConnectedComponents.begin(); itprint != whichConnectedComponents.end(); ++itprint){
-    cout << itprint->first << " " << itprint->second << endl;
-  }
+  insertIntoComponents();
+  assignCoordinates();
+  printCoordinates();
+  //printComponents();
+
+
 }
 
 void MatrixGen::organizeComponents(){
@@ -120,5 +137,68 @@ void MatrixGen::organizeComponents(){
       }
     }
     ++actualComponent;
+  }
+}
+
+void MatrixGen::insertIntoComponents(){
+  map<string, int>::iterator it;
+  for (it = whichConnectedComponents.begin(); it != whichConnectedComponents.end(); ++it){
+    if (connectedComponents.find(it->second) != connectedComponents.end()){
+      connectedComponents[it->second].insert(it->first);
+    }
+    else {
+      set<string> stmp;
+      stmp.insert(it->first);
+      connectedComponents.insert(make_pair(it->second, stmp));
+    }
+  }
+}
+
+void MatrixGen::assignCoordinates(){
+  map<int, set<string>>::iterator it;
+  for (it = connectedComponents.begin(); it != connectedComponents.end(); ++it){
+    set<string> members = it->second;
+    bool first = true;
+    int x;
+    int y;
+    set<string>::iterator itIn;
+    for (itIn = members.begin(); itIn != members.end(); ++itIn){
+      if (first){
+        first = false;
+        random_device rd; // obtain a random number from hardware
+        mt19937 eng(rd()); // seed the generator
+        uniform_int_distribution<> distr(15, 85);
+        x = distr(eng);
+        y = distr(eng);
+        membersInfo[*itIn]->setPoints(x, y);
+      }
+      else{
+        random_device rd; // obtain a random number from hardware
+        mt19937 eng(rd()); // seed the generator
+        uniform_int_distribution<> distr(x-15, x+15);
+        int xtmp = distr(eng);
+        uniform_int_distribution<> distr2(y-15, y+15);
+        int ytmp = distr2(eng);
+        membersInfo[*itIn]->setPoints(xtmp, ytmp);
+      }
+    }
+  }
+}
+
+void MatrixGen::printComponents(){
+  map<string, int>::iterator itprint;
+  for (itprint = whichConnectedComponents.begin(); itprint != whichConnectedComponents.end(); ++itprint){
+    cout << itprint->first << " " << itprint->second << endl;
+  }
+  cout << "-----" << endl;
+
+  map<int, set<string>>::iterator itprint2;
+  for (itprint2 = connectedComponents.begin(); itprint2 != connectedComponents.end(); ++itprint2){
+    cout << itprint2->first << " ";
+    set<string>::iterator itera3;
+    for(itera3 = itprint2->second.begin(); itera3 != itprint2->second.end(); ++itera3){
+      cout << *itera3 << " ";
+    }
+    cout << endl;
   }
 }

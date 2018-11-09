@@ -6,6 +6,7 @@
 #include <stack>
 #include <fstream>
 #include <sstream>
+#include <random>
 #include "member.h"
 #include "film.h"
 
@@ -28,6 +29,10 @@ class MatrixGen{
     void printToFile();
     void calcCoordinates();
     void organizeComponents();
+    void insertIntoComponents();
+    void assignCoordinates();
+    void printComponents();
+    void printCoordinates();
 
 
 
