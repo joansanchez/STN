@@ -7,9 +7,9 @@ void kMeans::calcKMeans(map<string,Member*> membersInfo, int k){
     cout << "Iteration: " << ite << endl;
     ++ite;
     findNearestCenter(membersInfo);
-    paintCenter();
     recalcCenter();
   }
+  printCenters();
   printColorMatrix();
 }
 
@@ -68,10 +68,16 @@ float kMeans::calcDist(pair<int,int> pCenter, pair<int, int>pNode){
   return sqrt(toReturn);
 }
 
-void kMeans::paintCenter(){
-  for (int i = 0; i < centerKeys.size(); ++ i){
-    colors[centerKeys[i]] = "black";
+void kMeans::printCenters(){
+  cout << "Writing on file NodeCenters.txt" << endl;
+  ofstream myfile;
+  myfile.open ("outputs/NodeCenters.txt");
+  map <int, pair<int, int>>::iterator it;
+  for (it = centers.begin(); it != centers.end(); ++it){
+    myfile << "cent"<< it->first << " " << it->second.first << " " << it->second.second << endl;
   }
+  myfile.close();
+  cout << "Writing on file NodeCenters.txt completed" << endl;
 }
 
 void kMeans::recalcCenter(){

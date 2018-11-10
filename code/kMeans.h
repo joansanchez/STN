@@ -25,7 +25,7 @@ class kMeans{
     void calcFirstCenters(map<string,Member*> membersInfo, int k);
     void findNearestCenter(map<string,Member*> membersInfo);
     void recalcCenter();
-    void paintCenter();
+    void printCenters();
     float calcDist(pair<int,int> pCenter, pair<int, int>pNode);
 };
 
