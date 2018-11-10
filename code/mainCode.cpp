@@ -24,5 +24,5 @@ int main(){
   cin >> k;
   kMeans* kmeans = new kMeans();
   kmeans->calcKMeans(matGen->getMembersInfo(), k);
-
+  inSear->findInfluencersCommunity(kmeans->getColors(), matGen->getMembersInfo());
 }

@@ -19,6 +19,7 @@ class kMeans{
     map <int, pair<int, int>> centers;
     map <int, stack<pair<int,int>>> newCenterCalc;
     vector<string> centerKeys;
+    ofstream myfile2;
   public:
     void calcKMeans(map<string,Member*> membersInfo, int k);
     void printColorMatrix();
@@ -27,6 +28,7 @@ class kMeans{
     void recalcCenter();
     void printCenters();
     float calcDist(pair<int,int> pCenter, pair<int, int>pNode);
+    map <string, string> getColors();
 };
 
 #endif

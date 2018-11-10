@@ -2,13 +2,16 @@
 
 void kMeans::calcKMeans(map<string,Member*> membersInfo, int k){
   calcFirstCenters(membersInfo, k);
+  myfile2.open ("outputs/k-means.txt");
   int ite = 0;
   while (!estable){
-    cout << "Iteration: " << ite << endl;
+    myfile2 << "Iteration: " << ite << endl;
     ++ite;
     findNearestCenter(membersInfo);
     recalcCenter();
   }
+  cout << "k-means performed in " << ite << " iterations" << endl;
+  cout << "For more info about all k-means iterations see k-means.txt" << endl;
   printCenters();
   printColorMatrix();
 }
@@ -93,12 +96,16 @@ void kMeans::recalcCenter(){
       x += pairTmp.first;
       y += pairTmp.second;
     }
-    cout << "old center: " << centers[it->first].first << ", " <<centers[it->first].second << "\t";
-    cout << "new center: " << x/size << ", " << y/size << "\t";
+    myfile2 << "old center: " << centers[it->first].first << ", " <<centers[it->first].second << "\t";
+    myfile2 << "new center: " << x/size << ", " << y/size << "\t";
     float dist = calcDist(centers[it->first], make_pair(x/size,y/size));
-    cout << "dist: " << dist << endl;
+    myfile2 << "dist: " << dist << endl;
     if(dist< 1.0 and estable) estable = true;
     else estable = false;
     centers[it->first] = make_pair(x/size,y/size);
   }
+}
+
+map <string, string> kMeans::getColors(){
+  return colors;
 }
