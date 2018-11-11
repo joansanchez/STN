@@ -74,12 +74,16 @@ float kMeans::calcDist(pair<int,int> pCenter, pair<int, int>pNode){
 void kMeans::printCenters(){
   cout << "Writing on file NodeCenters.txt" << endl;
   ofstream myfile;
+  ofstream myfile2;
   myfile.open ("outputs/NodeCenters.txt");
+  myfile2.open ("outputs/NodeCentersByAdjacncy.txt");
   map <string, pair<int, int>>::iterator it;
   for (it = centers.begin(); it != centers.end(); ++it){
     myfile << "cent"<< it->first << " " << it->second.first << " " << it->second.second << endl;
+    myfile2 << "cent"<< it->first << " " << it->second.first << " " << it->second.second << endl;
   }
   myfile.close();
+  myfile2.close();
   cout << "Writing on file NodeCenters.txt completed" << endl;
 }
 

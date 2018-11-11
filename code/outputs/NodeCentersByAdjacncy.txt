@@ -10,3 +10,11 @@ Distance between k-means center and most influential node in community b: 100.49
 Distance between k-means center and most influential node in community c: 104.995
 Distance between k-means center and most influential node in community g: 84.1546
 Distance between k-means center and most influential node in community r: 65.1153
+adjab 948 540
+adjac 819 747
+adjag 710 534
+adjar 742 778
+Distance between k-means center and node with more adjacencies within the community b: 94.3398
+Distance between k-means center and node with more adjacencies within the community c: 21.095
+Distance between k-means center and node with more adjacencies within the community g: 20.8087
+Distance between k-means center and node with more adjacencies within the community r: 96.6644

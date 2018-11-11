@@ -25,4 +25,7 @@ int main(){
   kMeans* kmeans = new kMeans();
   kmeans->calcKMeans(matGen->getMembersInfo(), k);
   inSear->findInfluencersCommunity(kmeans->getColors(), matGen->getMembersInfo());
+  inSear->findImportantNodeCommunity(kmeans->getColors(), matGen->getMembersInfo(), matGen->getAdjacencyMatrix());
+  cout << "---------------" << endl;
+  cout << "Process completed. You can pot the results using the plotAdjacencyMatrix.ipynb file inside the output folder." << endl;
 }
