@@ -16,8 +16,8 @@ class kMeans{
     map <string, string> colors;
     vector<string> mapKeys;
     vector<string> colCell {"b", "g", "r", "c", "m", "y", "purple", "orange", "salmon", "maroon"};
-    map <int, pair<int, int>> centers;
-    map <int, stack<pair<int,int>>> newCenterCalc;
+    map <string, pair<int, int>> centers;
+    map <string, stack<pair<int,int>>> newCenterCalc;
     vector<string> centerKeys;
     ofstream myfile2;
   public:

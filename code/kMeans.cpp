@@ -40,9 +40,9 @@ void kMeans::calcFirstCenters(map<string,Member*> membersInfo, int k){
   uniform_int_distribution<> distr(0, mapKeys.size());
   for (int i = 0; i<k; ++i){
     string tmp = mapKeys[distr(eng)];
-    centers[i] = membersInfo[tmp]->getPoints();
+    centers[colCell[i]] = membersInfo[tmp]->getPoints();
     stack<pair<int,int>> stackTmp;
-    newCenterCalc[i] = stackTmp;
+    newCenterCalc[colCell[i]] = stackTmp;
     colors[tmp] = colCell[i];
     centerKeys.push_back(tmp);
   }
@@ -51,9 +51,9 @@ void kMeans::calcFirstCenters(map<string,Member*> membersInfo, int k){
 void kMeans::findNearestCenter(map<string,Member*> membersInfo){
   map<string,Member*>::iterator it;
   for (it = membersInfo.begin(); it != membersInfo.end(); ++it){
-    int currentCentre;
+    string currentCentre;
     float currentDistance = 100000.0;
-    map <int, pair<int, int>>::iterator itCenters;
+    map <string, pair<int, int>>::iterator itCenters;
     for(itCenters = centers.begin(); itCenters != centers.end(); ++itCenters){
       float tmpDist = calcDist(itCenters->second, it->second->getPoints());
       if (tmpDist < currentDistance){
@@ -61,7 +61,7 @@ void kMeans::findNearestCenter(map<string,Member*> membersInfo){
         currentDistance = tmpDist;
       }
     }
-    colors[it->first] = colCell[currentCentre];
+    colors[it->first] = currentCentre;
     newCenterCalc[currentCentre].push(it->second->getPoints());
   }
 }
@@ -75,7 +75,7 @@ void kMeans::printCenters(){
   cout << "Writing on file NodeCenters.txt" << endl;
   ofstream myfile;
   myfile.open ("outputs/NodeCenters.txt");
-  map <int, pair<int, int>>::iterator it;
+  map <string, pair<int, int>>::iterator it;
   for (it = centers.begin(); it != centers.end(); ++it){
     myfile << "cent"<< it->first << " " << it->second.first << " " << it->second.second << endl;
   }
@@ -84,7 +84,7 @@ void kMeans::printCenters(){
 }
 
 void kMeans::recalcCenter(){
-  map <int, stack<pair<int,int>>>::iterator it;
+  map <string, stack<pair<int,int>>>::iterator it;
   estable = true;
   for (it = newCenterCalc.begin(); it != newCenterCalc.end(); ++it){
     stack<pair<int,int>> tmpStack = it->second;

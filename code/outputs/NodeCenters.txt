@@ -1,8 +1,8 @@
-cent0 326 214
-cent1 149 137
-cent2 204 223
-cent3 183 329
-inflb 377 276
-inflc 91 365
-inflg 138 140
-inflr 159 210
+centb 711 411
+centc 690 262
+centg 860 401
+centr 847 249
+inflb 716 376
+inflc 684 215
+inflg 869 462
+inflr 837 309

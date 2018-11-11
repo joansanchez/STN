@@ -1,130 +1,95 @@
 Iteration: 0
-old center: 371, 137	new center: 336, 170	dist: 48.1041
-old center: 163, 129	new center: 156, 132	dist: 7.61577
-old center: 215, 217	new center: 220, 225	dist: 9.43398
-old center: 210, 331	new center: 212, 325	dist: 6.32456
+old center: 765, 424	new center: 732, 420	dist: 33.2415
+old center: 730, 260	new center: 700, 266	dist: 30.5941
+old center: 871, 350	new center: 868, 373	dist: 23.1948
+old center: 865, 211	new center: 860, 232	dist: 21.587
 Iteration: 1
-old center: 336, 170	new center: 331, 183	dist: 13.9284
-old center: 156, 132	new center: 152, 136	dist: 5.65685
-old center: 220, 225	new center: 216, 226	dist: 4.12311
-old center: 212, 325	new center: 207, 327	dist: 5.38516
+old center: 732, 420	new center: 724, 417	dist: 8.544
+old center: 700, 266	new center: 696, 265	dist: 4.12311
+old center: 868, 373	new center: 865, 381	dist: 8.544
+old center: 860, 232	new center: 854, 237	dist: 7.81025
 Iteration: 2
-old center: 331, 183	new center: 329, 188	dist: 5.38516
-old center: 152, 136	new center: 150, 138	dist: 2.82843
-old center: 216, 226	new center: 214, 226	dist: 2
-old center: 207, 327	new center: 203, 328	dist: 4.12311
+old center: 724, 417	new center: 721, 416	dist: 3.16228
+old center: 696, 265	new center: 694, 265	dist: 2
+old center: 865, 381	new center: 864, 386	dist: 5.09902
+old center: 854, 237	new center: 852, 240	dist: 3.60555
 Iteration: 3
-old center: 329, 188	new center: 328, 192	dist: 4.12311
-old center: 150, 138	new center: 149, 138	dist: 1
-old center: 214, 226	new center: 212, 226	dist: 2
-old center: 203, 328	new center: 201, 328	dist: 2
+old center: 721, 416	new center: 720, 415	dist: 1.41421
+old center: 694, 265	new center: 693, 264	dist: 1.41421
+old center: 864, 386	new center: 864, 389	dist: 3
+old center: 852, 240	new center: 850, 243	dist: 3.60555
 Iteration: 4
-old center: 328, 192	new center: 328, 195	dist: 3
-old center: 149, 138	new center: 149, 139	dist: 1
-old center: 212, 226	new center: 211, 225	dist: 1.41421
-old center: 201, 328	new center: 199, 328	dist: 2
+old center: 720, 415	new center: 718, 414	dist: 2.23607
+old center: 693, 264	new center: 692, 264	dist: 1
+old center: 864, 389	new center: 864, 392	dist: 3
+old center: 850, 243	new center: 849, 244	dist: 1.41421
 Iteration: 5
-old center: 328, 195	new center: 328, 197	dist: 2
-old center: 149, 139	new center: 148, 139	dist: 1
-old center: 211, 225	new center: 210, 225	dist: 1
-old center: 199, 328	new center: 197, 328	dist: 2
+old center: 718, 414	new center: 717, 414	dist: 1
+old center: 692, 264	new center: 691, 264	dist: 1
+old center: 864, 392	new center: 863, 393	dist: 1.41421
+old center: 849, 244	new center: 849, 245	dist: 1
 Iteration: 6
-old center: 328, 197	new center: 327, 199	dist: 2.23607
-old center: 148, 139	new center: 148, 139	dist: 0
-old center: 210, 225	new center: 209, 225	dist: 1
-old center: 197, 328	new center: 196, 328	dist: 1
+old center: 717, 414	new center: 716, 413	dist: 1.41421
+old center: 691, 264	new center: 691, 263	dist: 1
+old center: 863, 393	new center: 863, 395	dist: 2
+old center: 849, 245	new center: 848, 246	dist: 1.41421
 Iteration: 7
-old center: 327, 199	new center: 327, 201	dist: 2
-old center: 148, 139	new center: 147, 139	dist: 1
-old center: 209, 225	new center: 208, 225	dist: 1
-old center: 196, 328	new center: 194, 328	dist: 2
+old center: 716, 413	new center: 715, 413	dist: 1
+old center: 691, 263	new center: 691, 263	dist: 0
+old center: 863, 395	new center: 862, 395	dist: 1
+old center: 848, 246	new center: 848, 247	dist: 1
 Iteration: 8
-old center: 327, 201	new center: 327, 203	dist: 2
-old center: 147, 139	new center: 147, 139	dist: 0
-old center: 208, 225	new center: 208, 224	dist: 1
-old center: 194, 328	new center: 193, 328	dist: 1
+old center: 715, 413	new center: 715, 413	dist: 0
+old center: 691, 263	new center: 691, 263	dist: 0
+old center: 862, 395	new center: 862, 396	dist: 1
+old center: 848, 247	new center: 848, 247	dist: 0
 Iteration: 9
-old center: 327, 203	new center: 327, 204	dist: 1
-old center: 147, 139	new center: 148, 139	dist: 1
-old center: 208, 224	new center: 207, 224	dist: 1
-old center: 193, 328	new center: 192, 328	dist: 1
+old center: 715, 413	new center: 714, 413	dist: 1
+old center: 691, 263	new center: 690, 263	dist: 1
+old center: 862, 396	new center: 862, 397	dist: 1
+old center: 848, 247	new center: 848, 247	dist: 0
 Iteration: 10
-old center: 327, 204	new center: 327, 205	dist: 1
-old center: 148, 139	new center: 148, 139	dist: 0
-old center: 207, 224	new center: 207, 224	dist: 0
-old center: 192, 328	new center: 191, 329	dist: 1.41421
+old center: 714, 413	new center: 714, 412	dist: 1
+old center: 690, 263	new center: 690, 263	dist: 0
+old center: 862, 397	new center: 861, 398	dist: 1.41421
+old center: 848, 247	new center: 848, 248	dist: 1
 Iteration: 11
-old center: 327, 205	new center: 327, 206	dist: 1
-old center: 148, 139	new center: 148, 138	dist: 1
-old center: 207, 224	new center: 207, 224	dist: 0
-old center: 191, 329	new center: 190, 329	dist: 1
+old center: 714, 412	new center: 713, 412	dist: 1
+old center: 690, 263	new center: 690, 263	dist: 0
+old center: 861, 398	new center: 861, 398	dist: 0
+old center: 848, 248	new center: 848, 248	dist: 0
 Iteration: 12
-old center: 327, 206	new center: 327, 207	dist: 1
-old center: 148, 138	new center: 148, 138	dist: 0
-old center: 207, 224	new center: 206, 224	dist: 1
-old center: 190, 329	new center: 189, 329	dist: 1
+old center: 713, 412	new center: 713, 412	dist: 0
+old center: 690, 263	new center: 690, 263	dist: 0
+old center: 861, 398	new center: 861, 399	dist: 1
+old center: 848, 248	new center: 848, 248	dist: 0
 Iteration: 13
-old center: 327, 207	new center: 327, 208	dist: 1
-old center: 148, 138	new center: 148, 138	dist: 0
-old center: 206, 224	new center: 206, 224	dist: 0
-old center: 189, 329	new center: 188, 329	dist: 1
+old center: 713, 412	new center: 713, 412	dist: 0
+old center: 690, 263	new center: 690, 263	dist: 0
+old center: 861, 399	new center: 861, 399	dist: 0
+old center: 848, 248	new center: 848, 249	dist: 1
 Iteration: 14
-old center: 327, 208	new center: 327, 209	dist: 1
-old center: 148, 138	new center: 148, 138	dist: 0
-old center: 206, 224	new center: 206, 224	dist: 0
-old center: 188, 329	new center: 188, 329	dist: 0
+old center: 713, 412	new center: 712, 412	dist: 1
+old center: 690, 263	new center: 690, 263	dist: 0
+old center: 861, 399	new center: 860, 400	dist: 1.41421
+old center: 848, 249	new center: 848, 249	dist: 0
 Iteration: 15
-old center: 327, 209	new center: 327, 209	dist: 0
-old center: 148, 138	new center: 148, 138	dist: 0
-old center: 206, 224	new center: 205, 224	dist: 1
-old center: 188, 329	new center: 187, 329	dist: 1
+old center: 712, 412	new center: 712, 411	dist: 1
+old center: 690, 263	new center: 690, 262	dist: 1
+old center: 860, 400	new center: 860, 400	dist: 0
+old center: 848, 249	new center: 848, 249	dist: 0
 Iteration: 16
-old center: 327, 209	new center: 326, 210	dist: 1.41421
-old center: 148, 138	new center: 148, 138	dist: 0
-old center: 205, 224	new center: 205, 224	dist: 0
-old center: 187, 329	new center: 187, 329	dist: 0
+old center: 712, 411	new center: 711, 411	dist: 1
+old center: 690, 262	new center: 690, 262	dist: 0
+old center: 860, 400	new center: 860, 400	dist: 0
+old center: 848, 249	new center: 847, 249	dist: 1
 Iteration: 17
-old center: 326, 210	new center: 326, 210	dist: 0
-old center: 148, 138	new center: 148, 138	dist: 0
-old center: 205, 224	new center: 205, 224	dist: 0
-old center: 187, 329	new center: 186, 329	dist: 1
+old center: 711, 411	new center: 711, 411	dist: 0
+old center: 690, 262	new center: 690, 262	dist: 0
+old center: 860, 400	new center: 860, 401	dist: 1
+old center: 847, 249	new center: 847, 249	dist: 0
 Iteration: 18
-old center: 326, 210	new center: 326, 211	dist: 1
-old center: 148, 138	new center: 149, 137	dist: 1.41421
-old center: 205, 224	new center: 205, 224	dist: 0
-old center: 186, 329	new center: 186, 329	dist: 0
-Iteration: 19
-old center: 326, 211	new center: 326, 211	dist: 0
-old center: 149, 137	new center: 149, 137	dist: 0
-old center: 205, 224	new center: 205, 223	dist: 1
-old center: 186, 329	new center: 185, 329	dist: 1
-Iteration: 20
-old center: 326, 211	new center: 326, 212	dist: 1
-old center: 149, 137	new center: 149, 137	dist: 0
-old center: 205, 223	new center: 204, 223	dist: 1
-old center: 185, 329	new center: 185, 329	dist: 0
-Iteration: 21
-old center: 326, 212	new center: 326, 212	dist: 0
-old center: 149, 137	new center: 149, 137	dist: 0
-old center: 204, 223	new center: 204, 223	dist: 0
-old center: 185, 329	new center: 184, 329	dist: 1
-Iteration: 22
-old center: 326, 212	new center: 326, 213	dist: 1
-old center: 149, 137	new center: 149, 137	dist: 0
-old center: 204, 223	new center: 204, 223	dist: 0
-old center: 184, 329	new center: 184, 329	dist: 0
-Iteration: 23
-old center: 326, 213	new center: 326, 213	dist: 0
-old center: 149, 137	new center: 149, 137	dist: 0
-old center: 204, 223	new center: 204, 223	dist: 0
-old center: 184, 329	new center: 183, 329	dist: 1
-Iteration: 24
-old center: 326, 213	new center: 326, 214	dist: 1
-old center: 149, 137	new center: 149, 137	dist: 0
-old center: 204, 223	new center: 204, 223	dist: 0
-old center: 183, 329	new center: 183, 329	dist: 0
-Iteration: 25
-old center: 326, 214	new center: 326, 214	dist: 0
-old center: 149, 137	new center: 149, 137	dist: 0
-old center: 204, 223	new center: 204, 223	dist: 0
-old center: 183, 329	new center: 183, 329	dist: 0
+old center: 711, 411	new center: 711, 411	dist: 0
+old center: 690, 262	new center: 690, 262	dist: 0
+old center: 860, 401	new center: 860, 401	dist: 0
+old center: 847, 249	new center: 847, 249	dist: 0
