@@ -20,6 +20,7 @@ class MatrixGen{
     map<string, int> whichConnectedComponents;
     map<int, set<string>> connectedComponents;
     void updateRatingsAfterRead();
+    float ratingSystem;
   public:
     void generateMatrix(map<string, Film*> films);
     map<string,Member*> getMembersInfo();
@@ -33,6 +34,7 @@ class MatrixGen{
     void assignCoordinates();
     void printComponents();
     void printCoordinates();
+    float getRatingSystem();
 
 
 

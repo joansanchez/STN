@@ -49,9 +49,15 @@ map<string, set<string>> MatrixGen::getAdjacencyMatrix(){
 
 void MatrixGen::updateRatingsAfterRead(){
   map<string,Member*>::iterator itera;
+  float ratingTotal = 0.0;
   for(itera = membersInfo.begin(); itera != membersInfo.end(); ++itera){
-    itera->second->calcRating();
+    ratingTotal += itera->second->calcRating();
   }
+  ratingSystem = ratingTotal;
+}
+
+float MatrixGen::getRatingSystem(){
+    return ratingSystem;
 }
 
 void MatrixGen::showRatings(){

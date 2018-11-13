@@ -1,20 +1,15 @@
-centb 868 590
-centc 837 736
-centg 722 551
-centr 702 690
-inflb 942 522
-inflc 937 768
-inflg 801 522
-inflr 654 734
-Distance between k-means center and most influential node in community b: 100.499
-Distance between k-means center and most influential node in community c: 104.995
-Distance between k-means center and most influential node in community g: 84.1546
-Distance between k-means center and most influential node in community r: 65.1153
-adjab 948 540
-adjac 819 747
-adjag 710 534
-adjar 742 778
-Distance between k-means center and node with more adjacencies within the community b: 94.3398
-Distance between k-means center and node with more adjacencies within the community c: 21.095
-Distance between k-means center and node with more adjacencies within the community g: 20.8087
-Distance between k-means center and node with more adjacencies within the community r: 96.6644
+inflb 342 666
+inflc 220 753
+inflg 321 849
+inflm 313 699
+inflr 484 829
+adjab 485 580
+adjac 227 792
+adjag 298 847
+adjam 193 668
+adjar 421 739
+Distance between node with more adjacencies and validator node in community b: 166.868
+Distance between node with more adjacencies and validator node in community c: 39.6232
+Distance between node with more adjacencies and validator node in community g: 23.0868
+Distance between node with more adjacencies and validator node in community m: 123.939
+Distance between node with more adjacencies and validator node in community r: 109.859

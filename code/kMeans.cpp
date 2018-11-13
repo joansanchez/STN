@@ -12,7 +12,7 @@ void kMeans::calcKMeans(map<string,Member*> membersInfo, int k){
   }
   cout << "k-means performed in " << ite << " iterations" << endl;
   cout << "For more info about all k-means iterations see k-means.txt" << endl;
-  printCenters();
+  //printCenters();
   printColorMatrix();
 }
 
@@ -96,7 +96,8 @@ void kMeans::recalcCenter(){
     int y = 0;
     int size = tmpStack.size();
     while (!tmpStack.empty()){
-      pair<int,int> pairTmp = tmpStack.top(); tmpStack.pop();
+      pair<int,int> pairTmp = tmpStack.top();
+      tmpStack.pop();
       x += pairTmp.first;
       y += pairTmp.second;
     }

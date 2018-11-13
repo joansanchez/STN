@@ -20,14 +20,52 @@ map <string, float> influencerSearcher::getNewRatings(){
   return newRatings;
 }
 
+void influencerSearcher::pageRankAl(map<string,Member*> membersInfo, map<string, set<string>> adjacencyMatrix, float systemFame){
+  int iterations;
+  cout << "Define a number of iterations for the PageRank algorithm" << endl;
+  cin >> iterations;
+  float sValue;
+  cout << "As we are using scaled PageRank, define a s value between 0.1 and 0.9"<< endl;
+  cin >> sValue;
+  map <string, float> fastInitialization;
+  map <string, set<string>>::iterator it1;
+  float size = 1.0/adjacencyMatrix.size();
+  for(it1 = adjacencyMatrix.begin(); it1 != adjacencyMatrix.end(); ++it1){
+    newRatingsPageRank[it1->first] = (membersInfo[it1->first]->getRating())/systemFame;
+    fastInitialization[it1->first] = 0.0;
+  }
+  for (int i = 0; i < iterations; ++i){
+    newRatingsPageRankTmp = fastInitialization;
+    for(it1 = adjacencyMatrix.begin(); it1 != adjacencyMatrix.end(); ++it1){
+      set<string> tmp = it1->second;
+      set<string>::iterator it2;
+      for (it2 = tmp.begin(); it2 != tmp.end(); ++it2){
+        newRatingsPageRankTmp[*it2] += newRatingsPageRank[it1->first]/tmp.size();
+      }
+    }
+    map <string, float>::iterator it3;
+    for (it3 = newRatingsPageRankTmp.begin(); it3 != newRatingsPageRankTmp.end(); ++it3){
+      newRatingsPageRankTmp[it3->first] = (1-sValue)/adjacencyMatrix.size() + newRatingsPageRankTmp[it3->first] * sValue;
+    }
+    newRatingsPageRank = newRatingsPageRankTmp;
+  }
+}
+
 void influencerSearcher::printNewRatings(){
   map <string, float>::iterator tmpIt;
   for(tmpIt = newRatings.begin(); tmpIt != newRatings.end(); ++tmpIt){
     cout << tmpIt->first << " " <<tmpIt->second << endl;
   }
 }
+void influencerSearcher::printNewRatingsPageRank(){
+  map <string, float>::iterator tmpIt;
+  for(tmpIt = newRatingsPageRank.begin(); tmpIt != newRatingsPageRank.end(); ++tmpIt){
+    cout << tmpIt->first << " " <<tmpIt->second << endl;
+  }
+}
 
-void influencerSearcher::findInfluencersCommunity(map<string, string> colors, map<string,Member*> membersInfo){
+void influencerSearcher::findInfluencersCommunity(map<string, string> colors, map<string,Member*> membersInfo)
+{
   map<string, string>::iterator it;
   for(it = colors.begin(); it != colors.end(); ++it){
     if (topMembersCommunity.find(it->second) != topMembersCommunity.end()){
@@ -41,45 +79,14 @@ void influencerSearcher::findInfluencersCommunity(map<string, string> colors, ma
   }
   ofstream myfile("outputs/NodeCenters.txt", ios::app);
   ofstream myfile2("outputs/NodeCentersByAdjacncy.txt", ios::app);
+  ofstream myfile3("outputs/NodeCentersByPageRank.txt", ios::app);
   map <string, pair<string, float>>::iterator it1;
   for(it1 = topMembersCommunity.begin(); it1 != topMembersCommunity.end(); ++it1){
     pair <int, int> tmp = membersInfo[it1->second.first]->getPoints();
     myfile << "infl" <<it1->first << " " << tmp.first << " " << tmp.second << endl;
     myfile2 << "infl" <<it1->first << " " << tmp.first << " " << tmp.second << endl;
+    myfile3 << "infl" <<it1->first << " " << tmp.first << " " << tmp.second << endl;
   }
-
-  ifstream file("outputs/NodeCenters.txt"); // pass file name as argment
-	string linebuffer;
-  vector<pair<int,int>> distances;
-  vector<char> names;
-  int numbDist = 0;
-  while (file && getline(file, linebuffer)){
-    if (linebuffer.length() != 0){
-      istringstream iss(linebuffer);
-      string partial;
-      iss >> partial;
-      if(partial[0] == 'c') {
-        ++numbDist;
-        names.push_back(partial[4]);
-      }
-      int temp1;
-      int temp2;
-      iss >>temp1;
-      iss >>temp2;
-      distances.push_back(make_pair(temp1, temp2));
-    }
-  }
-  for (int i = 0; i < numbDist; ++ i){
-    myfile << "Distance between k-means center and most influential node in community " <<names[i] << ": " << calcDist(distances[i], distances[i+numbDist]) << endl;
-    myfile2 << "Distance between k-means center and most influential node in community " <<names[i] << ": " << calcDist(distances[i], distances[i+numbDist]) << endl;
-  }
-
-  /*
-  map <string, pair<string, float>>::iterator it2;
-  for(it2 = topMembersCommunity.begin(); it2 != topMembersCommunity.end(); ++it2){
-    cout << it2->first << " " <<it2->second.first << " " <<it2->second.second << endl;
-  }
-  */
 }
 
 float influencerSearcher::calcDist(pair<int,int> pCenter, pair<int, int>pNode){
@@ -111,31 +118,70 @@ void influencerSearcher::findImportantNodeCommunity(map<string, string> colors, 
   vector<pair<int,int>> distances;
   vector<char> names;
   int numbDist = 0;
-  int linact = 0;
-  bool linActActive = true;
   while (file && getline(file, linebuffer)){
-    linActActive = true;
     if (linebuffer.length() != 0){
-      ++linact;
       istringstream iss(linebuffer);
       string partial;
       iss >> partial;
-      if(partial[0] == 'c') {
+      if(partial[0] == 'i') {
         ++numbDist;
-        linActActive = false;
         names.push_back(partial[4]);
       }
-      if (!linActActive or linact > 3*numbDist){
-        int temp1;
-        int temp2;
-        iss >>temp1;
-        iss >>temp2;
-        distances.push_back(make_pair(temp1, temp2));
-      }
+      int temp1;
+      int temp2;
+      iss >>temp1;
+      iss >>temp2;
+      distances.push_back(make_pair(temp1, temp2));
     }
   }
   for (int i = 0; i < numbDist; ++ i){
-    myfile << "Distance between k-means center and node with more adjacencies within the community " <<names[i] << ": " << calcDist(distances[i], distances[i+numbDist]) << endl;
+    myfile << "Distance between node with more adjacencies and validator node in community " <<names[i] << ": " << calcDist(distances[i], distances[i+numbDist]) << endl;
   }
+}
 
+
+void influencerSearcher::findInfluencersCommunityPageRank(map<string, string> colors, map<string,Member*> membersInfo)
+{
+  map<string, string>::iterator it;
+  for(it = colors.begin(); it != colors.end(); ++it){
+    if (topPageRankMembers.find(it->second) != topPageRankMembers.end()){
+      if(newRatingsPageRank[it->first] > topPageRankMembers[it->second].second){
+        topPageRankMembers[it->second]=make_pair(it->first, newRatingsPageRank[it->first]);
+      }
+    }
+    else{
+      topPageRankMembers[it->second]=make_pair(it->first, newRatingsPageRank[it->first]);
+    }
+  }
+  ofstream myfile("outputs/NodeCentersByPageRank.txt", ios::app);
+  map <string, pair<string, float>>::iterator it1;
+  for(it1 = topPageRankMembers.begin(); it1 != topPageRankMembers.end(); ++it1){
+    pair <int, int> tmp = membersInfo[it1->second.first]->getPoints();
+    myfile << "rank" <<it1->first << " " << tmp.first << " " << tmp.second << endl;
+
+  }
+  ifstream file("outputs/NodeCentersByPageRank.txt"); // pass file name as argment
+  string linebuffer;
+  vector<pair<int,int>> distances;
+  vector<char> names;
+  int numbDist = 0;
+  while (file && getline(file, linebuffer)){
+    if (linebuffer.length() != 0){
+      istringstream iss(linebuffer);
+      string partial;
+      iss >> partial;
+      if(partial[0] == 'i') {
+        ++numbDist;
+        names.push_back(partial[4]);
+      }
+      int temp1;
+      int temp2;
+      iss >>temp1;
+      iss >>temp2;
+      distances.push_back(make_pair(temp1, temp2));
+    }
+  }
+  for (int i = 0; i < numbDist; ++ i){
+    myfile << "Distance between node with more pageRank and validator node in community " <<names[i] << ": " << calcDist(distances[i], distances[i+numbDist]) << endl;
+  }
 }

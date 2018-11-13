@@ -6,7 +6,7 @@ Member::Member(float ratingIn){
 void Member::addRating(float newRating){
   queueRatings.push(newRating);
 }
-void Member::calcRating(){
+float Member::calcRating(){
   float tmp = 0.0f;
   int numberElements = 0;
   while (!queueRatings.empty()){
@@ -17,6 +17,7 @@ void Member::calcRating(){
   }
   if (numberElements != 0)  rating = tmp/numberElements;
   else rating = 0;
+  return rating;
 }
 float Member::getRating(){
   return rating;
