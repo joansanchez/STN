@@ -21,7 +21,7 @@ int main(){
   inSear->updateRatingsInfluence(matGen->getMembersInfo(),matGen->getAdjacencyMatrix());
   inSear->pageRankAl(matGen->getMembersInfo(),matGen->getAdjacencyMatrix(), matGen->getRatingSystem());
   int k;
-  cout << "For the community detection algorithm, introduce the number of communities between 2 and 10:" << endl;
+  cout << "For the community detection algorithm, introduce the number of communities you want to find between 2 and 10:" << endl;
   cin >> k;
   kMeans* kmeans = new kMeans();
   kmeans->calcKMeans(matGen->getMembersInfo(), k);

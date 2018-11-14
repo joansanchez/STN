@@ -1,7 +1,7 @@
 #include "influencerSearcher.h"
 
 void influencerSearcher::updateRatingsInfluence(map<string,Member*> membersInfo, map<string, set<string>> adjacencyMatrix){
-  cout << "Computing influenecers"  << endl;
+  cout << "Computing validator influenecers"  << endl;
   map<string, set<string>>::iterator itera;
   for(itera = adjacencyMatrix.begin(); itera != adjacencyMatrix.end(); ++itera){
     float newRating = 0.0f;
@@ -12,7 +12,7 @@ void influencerSearcher::updateRatingsInfluence(map<string,Member*> membersInfo,
     }
     newRatings.insert(make_pair(itera->first, newRating));
   }
-  cout << "Computing influenecers completed"  << endl;
+  cout << "Computing validator influenecers completed"  << endl;
   //printNewRatings();
 }
 
@@ -22,10 +22,11 @@ map <string, float> influencerSearcher::getNewRatings(){
 
 void influencerSearcher::pageRankAl(map<string,Member*> membersInfo, map<string, set<string>> adjacencyMatrix, float systemFame){
   int iterations;
-  cout << "Define a number of iterations for the PageRank algorithm" << endl;
+  cout << "PAGERANK:" << endl;
+  cout << "Define the number of iterations for the PageRank algorithm. Usually between 10 and 20 it's enough." << endl;
   cin >> iterations;
   float sValue;
-  cout << "As we are using scaled PageRank, define a s value between 0.1 and 0.9"<< endl;
+  cout << "As we are using scaled PageRank, define a s-factor value between 0.1 and 0.9. Use point for the decimals."<< endl;
   cin >> sValue;
   map <string, float> fastInitialization;
   map <string, set<string>>::iterator it1;
@@ -49,6 +50,7 @@ void influencerSearcher::pageRankAl(map<string,Member*> membersInfo, map<string,
     }
     newRatingsPageRank = newRatingsPageRankTmp;
   }
+  cout << "PageRank performed successfully" << endl;
 }
 
 void influencerSearcher::printNewRatings(){
@@ -77,6 +79,9 @@ void influencerSearcher::findInfluencersCommunity(map<string, string> colors, ma
       topMembersCommunity[it->second]=make_pair(it->first, newRatings[it->first]);
     }
   }
+  cout << "Writing on file NodeCenters.txt" << endl;
+  cout << "Writing on file NodeCentersByAdjacncy.txt" << endl;
+  cout << "Writing on file NodeCentersByPageRank.txt" << endl;
   ofstream myfile("outputs/NodeCenters.txt", ios::app);
   ofstream myfile2("outputs/NodeCentersByAdjacncy.txt", ios::app);
   ofstream myfile3("outputs/NodeCentersByPageRank.txt", ios::app);
@@ -87,6 +92,7 @@ void influencerSearcher::findInfluencersCommunity(map<string, string> colors, ma
     myfile2 << "infl" <<it1->first << " " << tmp.first << " " << tmp.second << endl;
     myfile3 << "infl" <<it1->first << " " << tmp.first << " " << tmp.second << endl;
   }
+  cout << "Writing on file NodeCenters.txt completed" << endl;
 }
 
 float influencerSearcher::calcDist(pair<int,int> pCenter, pair<int, int>pNode){
@@ -137,6 +143,7 @@ void influencerSearcher::findImportantNodeCommunity(map<string, string> colors, 
   for (int i = 0; i < numbDist; ++ i){
     myfile << "Distance between node with more adjacencies and validator node in community " <<names[i] << ": " << calcDist(distances[i], distances[i+numbDist]) << endl;
   }
+  cout << "Writing on file NodeCentersByAdjacncy.txt completed" << endl;
 }
 
 
@@ -184,4 +191,5 @@ void influencerSearcher::findInfluencersCommunityPageRank(map<string, string> co
   for (int i = 0; i < numbDist; ++ i){
     myfile << "Distance between node with more pageRank and validator node in community " <<names[i] << ": " << calcDist(distances[i], distances[i+numbDist]) << endl;
   }
+  cout << "Writing on file NodeCentersByPageRank.txt completed" << endl;
 }

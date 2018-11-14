@@ -1,15 +1,15 @@
-inflb 342 666
-inflc 220 753
-inflg 321 849
-inflm 313 699
-inflr 484 829
-adjab 485 580
-adjac 227 792
-adjag 298 847
-adjam 193 668
-adjar 421 739
-Distance between node with more adjacencies and validator node in community b: 166.868
-Distance between node with more adjacencies and validator node in community c: 39.6232
-Distance between node with more adjacencies and validator node in community g: 23.0868
-Distance between node with more adjacencies and validator node in community m: 123.939
-Distance between node with more adjacencies and validator node in community r: 109.859
+inflb 820 574
+inflc 881 428
+inflg 630 612
+inflm 780 710
+inflr 686 489
+adjab 845 684
+adjac 780 511
+adjag 631 677
+adjam 739 652
+adjar 621 477
+Distance between node with more adjacencies and validator node in community b: 112.805
+Distance between node with more adjacencies and validator node in community c: 130.729
+Distance between node with more adjacencies and validator node in community g: 65.0077
+Distance between node with more adjacencies and validator node in community m: 71.0282
+Distance between node with more adjacencies and validator node in community r: 66.0984

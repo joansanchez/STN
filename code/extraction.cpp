@@ -4,10 +4,12 @@
 using namespace std;
 
 map<string, Film*> Extraction::extract(map<string, Film*> films){
+  cout << "Starting data extraction process..." << endl;
   films=readTitles(films);
   films=readRatings(films);
   films=readNames(films);
   mapPrinter(films);
+  cout << "Data extraction process finished" << endl;
   return films;
 }
 

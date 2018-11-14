@@ -38,7 +38,7 @@ void MatrixGen::generateMatrix(map<string, Film*> films){
   printToFile();
   calcCoordinates();
   //showRatings();
-  cout << "Generating adjacency matrix completed" << endl;
+  cout << "Adjacency matrix generation completed" << endl;
 }
 map<string,Member*> MatrixGen::getMembersInfo(){
   return membersInfo;
